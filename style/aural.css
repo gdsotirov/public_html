@@ -1,0 +1,112 @@
+/* George D. Sotirov's Personal Home Page Styles
+ *
+ * Copyright 2004 George D. Sotirov <gsotirov@obs.bg>
+ *
+ * Media: arual
+ * Theme: Default
+ */
+
+/* Code for this media is partially based on the example code shown in the
+ *  document
+ *  "Cascading Style Sheets, level 2 revision 1
+ *  CSS 2.1 Specification
+ *  W3C Working Draft 15 September 2003",
+ *  Page 291
+ */
+@media aural {
+  a:link {
+    voice-family: harry, male;
+  }
+
+  a:visited {
+    voice-family: betty, female;
+  }
+
+  a:active {
+    voice-family: betty, female;
+    pitch-range: 80;
+    pitch: x-high;
+  }
+
+  abbr {
+    speak: spell-out;
+  }
+
+  acronym {
+    speak: normal;
+  }
+
+  b {
+    pitch: medium;
+    pitch-range: 60;
+    stress: 90;
+    richness: 90;
+  }
+
+  dt {
+    stress: 80;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    voice-family: paul, male;
+    stress: 20;
+    richness: 90;
+  }
+
+  h1 {
+    pitch: x-low;
+    pitch-range: 90;
+  }
+
+  h2 {
+    pitch: x-low;
+    pitch-range: 80;
+  }
+
+  h3 {
+    pitch: low;
+    pitch-range: 70;
+  }
+
+  h4 {
+    pitch: medium;
+    pitch-range: 60;
+  }
+
+  h5 {
+    pitch: medium;
+    pitch-range: 50;
+  }
+
+  h6 {
+    pitch: medium;
+    pitch-range: 40;
+  }
+
+  i {
+    pitch: medium;
+    pitch-range: 60;
+    stress: 60;
+    richness: 50;
+  }
+
+  li, dt, dd {
+    pitch: medium;
+    richness: 60;
+  }
+
+  pre, code, tt {
+    pitch: medium;
+    pitch-range: 0;
+    stress: 0;
+    richness: 80;
+  }
+
+  p.note[lang=en]:after {
+    content: "End note";
+  }
+
+  p.note[lang=bg]:after {
+    content: "Край на бележката";
+  }
+}
