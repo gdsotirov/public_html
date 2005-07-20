@@ -1,6 +1,6 @@
 /* George D. Sotirov's Personal Home Page Styles
  *
- * Copyright 2004 George D. Sotirov <gsotirov@obs.bg>
+ * Copyright 2004-2005 George D. Sotirov <gdsotirov@dir.bg>
  *
  * Media: print, projection, screen, tv
  * Theme: all
@@ -21,7 +21,7 @@
   blockquote, pre {
     page-break-inside: avoid;
   }
-
+  
   dl, ol, ul {
     page-break-before: avoid;
   }
@@ -93,16 +93,6 @@
 
   blockquote:after, q:after {
     content: close-quote;
-  }
-
-  body {
-    background-color: #fff;
-    color: #000;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
   }
 
   caption {
@@ -285,7 +275,9 @@
     margin: 1em;
   }
 
-  .hide_projection { display: none; }
+  .hide_projection {
+    display: none;
+  }
 }
 
 @media screen {
@@ -305,7 +297,9 @@
     margin: 0.65em;
   }
 
-  .hide_screen { display: none; }
+  .hide_screen {
+    display: none;
+  }
 }
 
 @media tv {
@@ -313,5 +307,7 @@
     font-size: 1.2em;
   }
 
-  .hide_tv { display: none; }
+  .hide_tv {
+    display: none;
+  }
 }
