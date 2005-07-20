@@ -1,6 +1,6 @@
 /* George D. Sotirov's Personal Home Page Styles
  *
- * Copyright 2004 George D. Sotirov <gsotirov@obs.bg>
+ * Copyright 2004-2005 George D. Sotirov <gdsotirov@dir.bg>
  *
  * Media: arual
  * Theme: Default
@@ -13,6 +13,7 @@
  *  W3C Working Draft 15 September 2003",
  *  Page 291
  */
+
 @media aural {
   a:link {
     voice-family: harry, male;
