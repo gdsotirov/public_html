@@ -1,5 +1,6 @@
 /* George D. Sotirov's Personal Home Page Styles
- * Written by George D. Sotirov, gsotirov@obs.bg
+ *
+ * Copyright 2004-2005 Georgi D. Sotirov <gdsotirov@dir.bg>
  *
  * Media      : print, projection, screen, tv
  * Theme      : Default
@@ -11,12 +12,8 @@
 @import url("visual.css");
 
 @media print {
-  a {
+  a[href] {
     color: inherit;
-  }
-
-  a.link {
-    text-decoration: underline;
   }
 
   div#Footer, div#Alphabet, form#ICQMsgForm {
@@ -47,7 +44,7 @@
 }
 
 @media print, screen {
-  a {
+  a[href].text {
     text-decoration: none;
   }
 
@@ -62,14 +59,19 @@
   }
 
   h3 {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-left: 1em;
   }
 }
 
 @media print, projection, screen, tv {
+  a[href] {
+    text-decoration: underline;
+  }
+
   body {
-    /* FIXME: Remove this for production release */
+    font-family: Helvetica, Ariel, sans-serif;
+    /* TODO: Remove this when the page is launched */
     background: #fff url("../img/wd_bg.png") no-repeat fixed center center;
   }
 
@@ -85,6 +87,7 @@
   h1 {
     margin-top: 0;
     padding-top: 0;
+    text-align: center;
   }
 
   hr {
@@ -101,7 +104,7 @@
   }
 
   p.note {
-    margin: 0 1em 0 1em;
+    margin: 0 1em 1em 1em;
     padding: 0.2em 0.2em 0.2em 0.2em;
   }
 
@@ -140,19 +143,15 @@
   }
 
   table.Skills col[title=Skill] {
-    width: 15%;
-  }
-
-  table.Skills col[title=Level] {
-    width: 15%;
+    width: 20%;
   }
 
   table.Skills col[title=Experience] {
-    width: 15%;
+    width: 20%;
   }
 
   table.Skills col[title=Where] {
-    width: 15%;
+    width: 20%;
   }
 
   table.Skills col[title=Notes] {
@@ -176,6 +175,10 @@
   table.Skills tr.even {
     background-color: #ccc;
   }
+  
+  .no_top_margin {
+    margin-top: 0;
+  }
 }
 
 @media projection, screen {
@@ -193,6 +196,10 @@
 
   div.row {
     clear: both;
+  }
+
+  div#Copyright a {
+    text-decoration: none;
   }
 
   div#GoogleLogo {
@@ -291,7 +298,7 @@
     text-align: left;
   }
 
-  p.text {
+  p.texti {
     text-indent: 1em;
   }
 
@@ -300,37 +307,34 @@
     background-color: #f7f7ab;
   }
 
-  ul {
+  div#Content ul {
     margin: 1em;
     padding-left: 4em;
   }
 }
 
 @media screen {
-  a.link {
-    text-decoration: underline;
-  }
-
   body {
-    margin: 0 0 0 13em;
-    padding: 0.5em 1em 0.5em 1em;
+    min-width: 610px;
   }
-
+  
   div#Menu {
     background-color: #fff;
     border: 1px solid #aaa;
-    bottom: auto;
-    left: 0.5em;
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-    width: 12em;
   }
 
-  body > div#Menu {
-    height: 70%;
-    overflow: auto;
-    position: fixed;
+  div#Menu a {
+    text-decoration: none;
+  }
+    
+  div#Menu.left {
+    float: left;
+    width: 17%;
+  }
+  
+  div#Content.right {
+    float: right;
+    width: 80%;
   }
 
   div#Menu a {
@@ -352,11 +356,7 @@
     padding: 0.1em 0 0.1em 1em;
   }
 
-  ul#Emails {
-    list-style: disc outside url("../img/icon_email.png");
-  }
-
-  ul#Phones {
-    list-style: disc outside url("../img/icon_phone.png");
+  div#Footer {
+    clear: both;
   }
 }
