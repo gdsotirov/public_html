@@ -1,5 +1,5 @@
 /* George Dimitrov Sotirov's Personal Home Page
- * Written by George D. Sotirov, gsotirov@obs.bg
+ * Written by George D. Sotirov, gdsotirov@dir.bg
  *
  * Scripting
  */
@@ -68,7 +68,7 @@ function checkMsgBody() {
  * Conformance: DOM L1, DOM L0!, ECMA Script
  */
 function genProblemsReport() {
-  var strAddress = "GgsotiRrov@obs.bg";
+  var strAddress = "gdsotirov@dir.bg";
   var strUA = navigator.userAgent; /* Warning: DOM L0 - Not in the specification. */
   var strSubject = translateString(PROBLEMS_REPORT);
   strSubject = sprintf(strSubject, strUA);
