@@ -13,6 +13,7 @@
 
 @media print {
   a[href] {
+    background-color: inherit;
     color: inherit;
   }
 
@@ -26,6 +27,7 @@
 
   hr {
     background-color: #000;
+    color: inherit;
   }
 
   p.note {
@@ -70,9 +72,9 @@
   }
 
   body {
+    background-color: #fff;
+    color: #000;
     font-family: Helvetica, Ariel, sans-serif;
-    /* TODO: Remove this when the page is launched */
-    background: #fff url("../img/wd_bg.png") no-repeat fixed center center;
   }
 
   dd p {
@@ -99,6 +101,7 @@
 
   p.copyright {
     color: #acaaac;
+    background-color: inherit;
     font-size: 0.8em;
     text-align: center;
   }
@@ -165,15 +168,18 @@
 
   table.Skills th {
     background-color: #aaa;
+    color: inherit;
     text-align: left;
   }
 
   table.Skills tr.odd {
     background-color: #fff;
+    color: inherit;
   }
 
   table.Skills tr.even {
     background-color: #ccc;
+    color: inherit;
   }
   
   .no_top_margin {
@@ -183,14 +189,17 @@
 
 @media projection, screen {
   a[href] {
+    background-color: inherit;
     color: #00f;
   }
 
   a[href]:active, a[href]:focus {
+    background-color: inherit;
     color: #00a;
   }
 
   a[href]:visited {
+    background-color: inherit;
     color: #52188b;
   }
 
@@ -215,20 +224,20 @@
     border: 1px solid #aaa;
   }
 
-  form#ICQMsgForm {
+  /*form#ICQMsgForm {
     margin: 1em 1em 1em 2em;
     padding: 0;
   }
 
   form#ICQMsgForm fieldset {
-    margin: 0;
+    margin: 0em;
     padding: 0.5em 0.5em 0.5em 0.5em;
   }
 
   form#ICQMsgForm legend {
     background-color: transparent;
-    border-radius: 1em;  /* WARNING: CSS3 property! */
-    -moz-border-radius: 12px; /* WARNING: Mozilla only property! */
+    border-radius: 1em;  /* WARNING: CSS3 property! /
+    -moz-border-radius: 12px; /* WARNING: Mozilla only property! /
     margin: 0;
     padding: 2px 8px 2px 8px;
   }
@@ -250,7 +259,7 @@
     float: left;
     clear: right;
     margin: 0.2em 0;
-  }
+  }*/
 
   form#GoogleSearch {
     margin: 1em;
@@ -259,6 +268,7 @@
 
   hr {
     background-color: #aaa;
+    color: inherit;
   }
 
   input, select {
@@ -271,18 +281,22 @@
   input[type=submit], input[type=reset] {
     background-color: #ccc;
     border: 0.1em outset #aaa;
+    color: inherit;
     font-weight: bold;
   }
 
   input[type=submit]:hover, input[type=reset]:hover {
     background-color: #ddd;
+    color: inherit;
   }
 
   p.copyright a {
+    background-color: inherit;
     color: #acaaff;
   }
 
   p.copyright a:visited {
+    background-color: inherit;
     color: #ffaaac;
   }
 
@@ -305,6 +319,7 @@
   p.note {
     border: 1px dashed #000;
     background-color: #f7f7ab;
+    color: inherit;
   }
 
   div#Content ul {
@@ -321,6 +336,7 @@
   div#Menu {
     background-color: #fff;
     border: 1px solid #aaa;
+    color: inherit;
   }
 
   div#Menu a {
@@ -338,6 +354,7 @@
   }
 
   div#Menu a {
+    background-color: inherit;
     color: #666;
     display: block;
     margin: 0.1em 1em;
@@ -346,11 +363,13 @@
 
   div#Menu a:hover {
     background-color: #eee;
+    color: inherit;
   }
 
   div#Menu h2 {
     background-color: #ccc;
     border-bottom: 1px solid #aaa;
+    color: inherit;
     font-size: 1em;
     margin: 0;
     padding: 0.1em 0 0.1em 1em;
