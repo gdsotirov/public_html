@@ -45,7 +45,7 @@
 @media print, projection, screen, tv {
   abbr[title], acronym[title] {
     font-style: normal;
-    border-bottom: 1px dotted inherit;
+    border-bottom: 1px dotted;
   }
 
   address {
