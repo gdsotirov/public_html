@@ -1,0 +1,375 @@
+/* George D. Sotirov's Personal Home Page Styles
+ *
+ * Copyright 2004-2005 Georgi D. Sotirov <gdsotirov@dir.bg>
+ *
+ * Media      : print, projection, screen, tv
+ * Theme      : Default
+ * Description: Clear fonts, gray color theme and menu on the left side.
+ * TODO       : 1. There is problem in displaying smoe items in IE 5. The
+ *                 is in this file (maybe some unsupported definitions).
+ */
+
+@import url("visual.css");
+
+@media print {
+  a[href] {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  div#Footer, div#Alphabet, form#ICQMsgForm {
+    display: none;
+  }
+
+  div h2 {
+    border-bottom: 1px solid #000;
+  }
+
+  hr {
+    background-color: #000;
+    color: inherit;
+  }
+
+  p.note {
+    font-style: italic;
+  }
+
+  table.CV col:first-child {
+    width: 40%;
+  }
+}
+
+@media print, projection {
+  div#Menu {
+    display: none;
+  }
+}
+
+@media print, screen {
+  a[href].text {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin-left: 1em;
+  }
+}
+
+@media print, projection, screen, tv {
+  a[href] {
+    text-decoration: underline;
+  }
+
+  body {
+    background-color: #fff;
+    color: #000;
+    font-family: Helvetica, Ariel, sans-serif;
+  }
+
+  dd p {
+    text-align: justify;
+  }
+
+  dl {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  h1 {
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+
+  p.copyright {
+    color: #acaaac;
+    background-color: inherit;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  p.note {
+    margin: 0 1em 1em 1em;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+  }
+
+  table.CV {
+    border-spacing: 0.5em 0;
+    padding-left: 1em;
+  }
+
+  table.CV, table.Skills {
+    empty-cells: show;
+    padding-right: 1em;
+    width: 100%;
+  }
+
+  table.CV col:first-child {
+    width: 30%;
+  }
+
+  table.CV col[title=Data] {
+    text-align: justify;
+  }
+
+  table.CV td:first-child {
+    padding-left: 0.5em;
+    text-align: right;
+    vertical-align: top;
+  }
+
+  table.CV tr:first-child {
+    display: none;
+  }
+
+  table.Skills {
+    border-spacing: 0;
+    padding-left: 2em;
+  }
+
+  table.Skills col[title=Skill] {
+    width: 20%;
+  }
+
+  table.Skills col[title=Experience] {
+    width: 20%;
+  }
+
+  table.Skills col[title=Where] {
+    width: 20%;
+  }
+
+  table.Skills col[title=Notes] {
+    text-align: justify;
+  }
+
+  table.Skills td, table.Skills th {
+    margin: 0;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+  }
+
+  table.Skills th {
+    background-color: #aaa;
+    color: inherit;
+    text-align: left;
+  }
+
+  table.Skills tr.odd {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  table.Skills tr.even {
+    background-color: #ccc;
+    color: inherit;
+  }
+
+  .no_top_margin {
+    margin-top: 0;
+  }
+}
+
+@media projection, screen {
+  a[href] {
+    background-color: inherit;
+    color: #00f;
+  }
+
+  a[href]:active, a[href]:focus {
+    background-color: inherit;
+    color: #00a;
+  }
+
+  a[href]:visited {
+    background-color: inherit;
+    color: #52188b;
+  }
+
+  div.row {
+    clear: both;
+  }
+
+  div#Copyright a {
+    text-decoration: none;
+  }
+
+  div#GoogleLogo {
+    float: left;
+    margin: 0 1em;
+  }
+
+  div h2 {
+    border-bottom: 1px solid #aaa;
+  }
+
+  fieldset, legend {
+    border: 1px solid #aaa;
+  }
+
+  /*form#ICQMsgForm {
+    margin: 1em 1em 1em 2em;
+    padding: 0;
+  }
+
+  form#ICQMsgForm fieldset {
+    margin: 0em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
+
+  form#ICQMsgForm legend {
+    background-color: transparent;
+    border-radius: 1em;  /* WARNING: CSS3 property! /
+    -moz-border-radius: 12px; /* WARNING: Mozilla only property! /
+    margin: 0;
+    padding: 2px 8px 2px 8px;
+  }
+
+  form#ICQMsgForm input[type=submit] {
+    margin-top: 1em;
+  }
+
+  form#ICQMsgForm .label {
+    float: left;
+    clear: left;
+    width: 6.5em;
+    text-align: right;
+    margin: 0.2em 0;
+    padding-top: 0.2em;
+  }
+
+  form#ICQMsgForm .input {
+    float: left;
+    clear: right;
+    margin: 0.2em 0;
+  }*/
+
+  form#GoogleSearch {
+    margin: 1em;
+    padding: 0;
+  }
+
+  hr {
+    background-color: #aaa;
+    color: inherit;
+  }
+
+  input, select {
+    background-color: #fff;
+    border: 0.1em inset #aaa;
+    color: #000;
+    padding: 0.1em 0;
+  }
+
+  input[type=submit], input[type=reset] {
+    background-color: #ccc;
+    border: 0.1em outset #aaa;
+    color: inherit;
+    font-weight: bold;
+  }
+
+  input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #ddd;
+    color: inherit;
+  }
+
+  p.copyright a {
+    background-color: inherit;
+    color: #acaaff;
+  }
+
+  p.copyright a:visited {
+    background-color: inherit;
+    color: #ffaaac;
+  }
+
+  p.text, p.text_left {
+    padding: 0 1em 0 1em;
+  }
+
+  p.text, p.texti, p.note {
+    text-align: justify;
+  }
+
+  p.text_left {
+    text-align: left;
+  }
+
+  p.texti {
+    text-indent: 1em;
+  }
+
+  p.note {
+    border: 1px dashed #000;
+    background-color: #f7f7ab;
+    color: inherit;
+  }
+
+  div#Content ul {
+    margin: 1em;
+    padding-left: 4em;
+  }
+}
+
+@media screen {
+  body {
+    min-width: 610px;
+  }
+
+  div#Content {
+    float: right;
+    width: 80%;
+  }
+
+  div#Menu {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    color: inherit;
+    float: left;
+    width: 17%;
+  }
+
+  div#Menu a {
+    background-color: inherit;
+    color: #000;
+    display: block;
+    margin: 0.1em 1em;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  div#Menu a:hover {
+    background-color: #eee;
+    color: inherit;
+  }
+
+  div#Menu h2 {
+    background-color: #ccc;
+    border-bottom: 1px solid #aaa;
+    color: inherit;
+    font-size: 1em;
+    margin: 0;
+    padding: 0.1em 0 0.1em 1em;
+  }
+
+  div#Footer {
+    clear: both;
+  }
+}
