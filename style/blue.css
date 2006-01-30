@@ -1,0 +1,345 @@
+/* George D. Sotirov's Personal Home Page Styles
+ *
+ * Copyright 2004-2005 Georgi D. Sotirov <gdsotirov@dir.bg>
+ *
+ * Media      : print, projection, screen, tv
+ * Theme      : Blue
+ * Description: Clear fonts, blue colors, menu on the left.
+ */
+
+@import url("visual.css");
+
+@media print {
+  a[href] {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  div#Footer, div#Alphabet, form#ICQMsgForm {
+    display: none;
+  }
+
+  div h2 {
+    border-bottom: 1px solid #000;
+  }
+
+  hr {
+    background-color: #00a;
+    color: inherit;
+  }
+
+  p.note {
+    font-style: italic;
+  }
+
+  table.CV col:first-child {
+    width: 40%;
+  }
+}
+
+@media print, projection {
+  div#Menu {
+    display: none;
+  }
+}
+
+@media print, screen {
+  a[href].text {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin-left: 1em;
+  }
+}
+
+@media print, projection, screen, tv {
+  a[href] {
+    text-decoration: underline;
+  }
+
+  body {
+    background-color: #fff;
+    color: #000;
+    font-family: Helvetica, Ariel, sans-serif;
+  }
+
+  dd p {
+    text-align: justify;
+  }
+
+  dl {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  h1 {
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+
+  p.copyright {
+    color: #acaaac;
+    background-color: inherit;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  p.note {
+    margin: 0 1em 1em 1em;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+  }
+
+  table.CV {
+    border-spacing: 0.5em 0;
+    padding-left: 1em;
+  }
+
+  table.CV, table.Skills {
+    empty-cells: show;
+    padding-right: 1em;
+    width: 100%;
+  }
+
+  table.CV col:first-child {
+    width: 30%;
+  }
+
+  table.CV col[title=Data] {
+    text-align: justify;
+  }
+
+  table.CV td:first-child {
+    padding-left: 0.5em;
+    text-align: right;
+    vertical-align: top;
+  }
+
+  table.CV tr:first-child {
+    display: none;
+  }
+
+  table.Skills {
+    border-spacing: 0;
+    padding-left: 2em;
+  }
+
+  table.Skills col[title=Skill] {
+    width: 20%;
+  }
+
+  table.Skills col[title=Experience] {
+    width: 20%;
+  }
+
+  table.Skills col[title=Where] {
+    width: 20%;
+  }
+
+  table.Skills col[title=Notes] {
+    text-align: justify;
+  }
+
+  table.Skills td, table.Skills th {
+    margin: 0;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+  }
+
+  table.Skills th {
+    background-color: #ccc;
+    color: inherit;
+    text-align: left;
+  }
+
+  table.Skills tr.odd {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  table.Skills tr.even {
+    background-color: #eee;
+    color: inherit;
+  }
+
+  .no_top_margin {
+    margin-top: 0;
+  }
+}
+
+@media projection, screen {
+  a[href] {
+    background-color: inherit;
+    color: #06f;
+  }
+
+  a[href]:active, a[href]:focus, a[href]:hover {
+    background-color: inherit;
+    color: #03f;
+    text-decoration: none;
+  }
+
+  a[href]:visited {
+    background-color: inherit;
+    color: #96c;
+  }
+
+  div.row {
+    clear: both;
+  }
+
+  div#Content ul {
+    margin: 1em;
+    padding-left: 4em;
+  }
+
+  div#Copyright a {
+    text-decoration: none;
+  }
+
+  div#GoogleLogo {
+    float: left;
+    margin: 0 1em;
+  }
+
+  div h2 {
+    background-color: #9df;
+    border-bottom: 1px solid #09f;
+    border-top: 1px solid #09f;
+    color: inherit;
+  }
+
+  fieldset, legend {
+    border: 1px solid #aaa;
+  }
+
+  form#GoogleSearch {
+    margin: 1em;
+    padding: 0;
+  }
+
+  hr {
+    background-color: #aaa;
+    color: inherit;
+  }
+
+  input, select {
+    background-color: #fff;
+    border: 0.1em inset #aaa;
+    color: #000;
+    padding: 0.1em 0;
+  }
+
+  input[type=submit], input[type=reset] {
+    background-color: #ccc;
+    border: 0.1em outset #aaa;
+    color: inherit;
+    font-weight: bold;
+  }
+
+  input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #ddd;
+    color: inherit;
+  }
+
+  p.copyright a {
+    background-color: inherit;
+    color: #aaf;
+  }
+
+  p.copyright a:visited {
+    background-color: inherit;
+    color: #fac;
+  }
+
+  p.text, p.text_left {
+    padding: 0 1em 0 1em;
+  }
+
+  p.text, p.texti, p.note {
+    text-align: justify;
+  }
+
+  p.text_left {
+    text-align: left;
+  }
+
+  p.texti {
+    text-indent: 1em;
+  }
+
+  p.note {
+    border: 1px dashed #000;
+    background-color: #fc9;
+    color: inherit;
+  }
+}
+
+@media screen {
+  body > div#Menu {
+    position: fixed;
+  }
+
+  div#Header {
+    margin-left: 12em;
+  }
+
+  div#Menu {
+    background-color: #eee;
+    border-right: 1px dashed #aaa;
+    color: inherit;
+    margin-right: 1em;
+    position: absolute;
+    height: auto;
+    width: 12em;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  div#Menu a {
+    background-color: inherit;
+    color: #000;
+    display: block;
+    margin: 0.1em;
+    padding: 0 0 0 1em;
+    text-decoration: none;
+  }
+
+  div#Menu a:active, div#Menu a:focus, div#Menu a:hover {
+    background-color: #9df;
+    color: #000;
+  }
+
+  div#Menu h2 {
+    background-color: #9df;
+    border: none;
+    color: inherit;
+    margin: 0;
+    padding: 0 0 0 1em;
+  }
+
+  div#Content, div#Footer {
+    margin-left: 12em;
+    padding-left: 1em;
+  }
+}
