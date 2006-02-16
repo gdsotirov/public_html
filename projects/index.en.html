@@ -17,11 +17,12 @@
 <link rel="stylesheet" media="print, projection, screen, tv" title="Default" href="../style/blue.css" />
 <link rel="alternate stylesheet" media="print, projection, screen, tv" title="Gray" href="../style/gray.css" />
 <!-- Icon -->
-<link rel="icon" href="../img/favicon"  />
-<link rel="shortcut icon" href="../img/favicon"  />
+<link rel="icon" href="../img/favicon" />
+<link rel="shortcut icon" href="../img/favicon" />
 <!-- Links -->
 <link rel="author" href="mailto:Georgi Sotirov &lt;gdsotirov@dir.bg&gt;" />
 <link rel="copyright" href="../copyright" />
+<link rel="search" href="../search" />
 <link rel="glossary" href="../glossary" />
 <link rel="top" href="../" title="Home" />
 <link rel="up" href="../search" title="Up" />
@@ -36,6 +37,7 @@
 <p>
 <a accesskey="D" href="#Desktop"><span class="u">D</span>esktop applications</a>
 <a accesskey="W" href="#Web"><span class="u">W</span>eb applications</a>
+<a accesskey="T" href="#Translations"><span class="u">T</span>ranslations</a>
 <a accesskey="O" href="#Others"><span class="u">O</span>thers</a>
 </p></map>
 <map id="MenuGeneral">
@@ -50,23 +52,24 @@
 </div>
 
 <div id="Header">
-<h1>Georgi Sotirov's Personal Pages: Projects</h1>
+<h1>Georgi Sotirov's Projects</h1>
 </div>
 
 <div id="Content" class="right">
 
 <div id="Desktop">
 <h2>Desktop Applications</h2>
-
 <div id="ProjectDAC">
 <h3>DAC - Dish Antenna Calculator</h3>
 <p class="text">This is the project that I wrote to ilustrate my brother's
 diploma thesis. The application calculates the parameters of a VSAT dish antenna
-and shows some nice graphics and drawings.</p>
+and shows some nice graphics and schemes.</p>
 <ul>
-<li>WebCVS: <a href="https://gsotirov79.ddns.homelan.bg/cgi-bin/cvsweb/index.cgi/projects/c%2B%2B/dac/">projects/c++/dac/</a></li>
-<li>Technologies used: C++</li>
-<li>Development environment: Borland C++ 5.0</li>
+<li>CVS: <a href="https://gsotirov79.ddns.homelan.bg/cgi-bin/cvsweb/index.cgi/projects/c%2B%2B/dac/">projects/c++/dac/</a></li>
+<li>Bug reports: <a href="http://gsotirov79.ddns.homelan.bg/bugzilla/">Sotirov-bg.net Bugzilla</a> (you need to send registration request to <a href="mailto:Georgi D. Sotirov <gdsotirov@dir.bg>">Georgi Sotirov</a>)</li>
+<li>Technologies used: <a href="http://public.research.att.com/~bs/C++.html">C++</a></li>
+<li>Development environment: <a href="http://www.borland.com/us/products/cbuilder/index.html">Borland C++Builder</a> 5.0 5.0</li>
+<li>Download: <a href="dac/dac-latest.zip">HTTP</a>, <a href="ftp://gsotirov79.ddns.homelan.bg/pub/dac/dac-latest.zip">FTP</a></li>
 </ul>
 </div>
 </div>
@@ -76,12 +79,19 @@ and shows some nice graphics and drawings.</p>
 
 <div id="ProjectICalc">
 <h3>Interest Calculator</h3>
-<p class="text">The application allows calculation of the interest on deposit
-accounts. It allow calculation for unlimited period of time and shows the
-accumulation of the interest.</p>
+<p class="text">The application calculates the interest on deposit accounts
+for a given period and shows the account balance. It can calculate both simple
+and compaund interest.</p>
 <ul>
-<li>URL: <a href="http://gsotirov79.ddns.homelan.bg/apps/calc/icalc/">http://gsotirov79.ddns.homelan.bg/apps/calc/icalc/</a></li>
-<li>WebCVS: <a href="https://gsotirov79.ddns.homelan.bg/cgi-bin/cvsweb/index.cgi/projects/web/icalc/">projects/web/icalc</a></li>
+<li>License: <a href="http://www.gnu.org/copyleft/gpl.html">GPL v2</a></li>
+<li>URL: <a href="http://gsotirov79.ddns.homelan.bg/apps/calc/icalc/">Interest Calculator</a></li>
+<li>CVS: <a href="https://gsotirov79.ddns.homelan.bg/cgi-bin/cvsweb/index.cgi/projects/web/icalc/">projects/web/icalc</a></li>
+<li>Bug reports: <a href="http://gsotirov79.ddns.homelan.bg/bugzilla/">Sotirov-bg.net Bugzilla</a> (you need to send registration request to <a href="mailto:Georgi D. Sotirov <gdsotirov@dir.bg>">Georgi Sotirov</a>)</li>
+<li>Technologies used:
+<a href="http://www.w3.org/MarkUp/"><abbr title="Extensible HyperText Markup Language">XHTML</abbr></a>,
+<a href="http://www.w3.org/Style/CSS/"><abbr title="Cascading Style Sheets">CSS</abbr></a>,
+Javascript</li>
+<li>Download: <a href="icalc/icalc-0.2.1.tar.gz">HTTP</a>, <a href="ftp://gsotirov79.ddns.homelan.bg/pub/icalc/icalc-0.2.1.tar.gz">FTP</a></li>
 </ul>
 </div>
 
@@ -92,8 +102,34 @@ banks, but it is entirely Javascript based (no data is transfered from the
 client to the server) and allows reverse calculation (from the payment it
 calculates the amount that can be given).</p>
 <ul>
-<li>URL: <a href="http://gsotirov79.ddns.homelan.bg/apps/calc/mcalc/">http://gsotirov79.ddns.homelan.bg/apps/calc/mcalc/</a></li>
-<li>WebCVS: <a href="https://gsotirov79.ddns.homelan.bg/cgi-bin/cvsweb/index.cgi/projects/web/mcalc/">projects/web/icalc</a></li>
+<li>License: <a href="http://www.gnu.org/copyleft/gpl.html">GPL v2</a></li>
+<li>URL: <a href="http://gsotirov79.ddns.homelan.bg/apps/calc/mcalc/">Mortgage Calculator</a></li>
+<li>CVS: <a href="https://gsotirov79.ddns.homelan.bg/cgi-bin/cvsweb/index.cgi/projects/web/mcalc/">projects/web/icalc</a></li>
+<li>Bug reports: <a href="http://gsotirov79.ddns.homelan.bg/bugzilla/">Sotirov-bg.net Bugzilla</a> (you need to send registration request to <a href="mailto:Georgi D. Sotirov <gdsotirov@dir.bg>">Georgi Sotirov</a>)</li>
+<li>Technologies used:
+<a href="http://www.w3.org/MarkUp/"><abbr title="Extensible HyperText Markup Language">XHTML</abbr></a>,
+<a href="http://www.w3.org/Style/CSS/"><abbr title="Cascading Style Sheets">CSS</abbr></a>,
+Javascript</li>
+<li>Download: <a href="mcalc/mcalc-0.2.1.tar.gz">HTTP</a>, <a href="ftp://gsotirov79.ddns.homelan.bg/pub/mcalc/mcalc-0.2.1.tar.gz">FTP</a></li>
+</ul>
+</div>
+</div>
+
+<div id="Translations">
+<h2>Translations</h2>
+<div id="BugzillaBG">
+<h3>Bugzilla in bulgarian</h3>
+<p class="text">This is <a href="http://www.bugzilla.org/download/#localizations">the
+official trnslations</a> of <a href="http://www.bugzilla.org">Bugzilla</a> in
+Bulgarian. It is now part of the <a href="http://mozilla-bg.openfmi.net/">Mozilla-bg</a>
+project, which has as a target quality translation and localization of the
+<a href="http://www.mozilla.org">Mozilla Organization</a> products.</p>
+<ul>
+<li>License: <a href="http://www.gnu.org/copyleft/gpl.html">GPL v2</a></li>
+<li>URL: <a href="http://mozilla-bg.openfmi.net/">Official page</a>, <a href="http://openfmi.net/projects/mozilla-bg/">Project page</a></li>
+<li>SVN: <a href="https://svn.openfmi.net/mozilla-bg/bugzilla">https://svn.openfmi.net/mozilla-bg/bugzilla</a></li>
+<li>Bug report: <a href="http://openfmi.net/tracker/?atid=372&group_id=76&func=browse">Tracker</a></li>
+<li>Download: <a href="http://openfmi.net/frs/?group_id=76">Packages</a></li>
 </ul>
 </div>
 </div>
@@ -103,11 +139,14 @@ calculates the amount that can be given).</p>
 <div id="ProjectSlackwarePacakges">
 <h3>Slackware packages</h3>
 <p class="text">I use <a href="http://www.slackware.com">Slackware</a> Linux
-since 2001. From the begining of 2005 I've start building custom packages for
-my machine and I've decided to share them. You can find the packages on my
-public <abbr title="File Transfer Protocol">FTP</abbr> server.</p>
+since 2001. From the begining of 2005 I've start building packages for my
+machine and I've decided to share them. You can find the packages on my
+public <abbr title="File Transfer Protocol">FTP</abbr> server, and some of
+them on the specialized site <a href="http://www.linuxpackages.net">LinuxPackages</a> also.</p>
 <ul>
-<li>Location: <a href="ftp://gsotirov79.ddns.homelan.bg/pub/slackware/contrib/packages/">ftp://gsotirov79.ddns.homelan.bg/pub/slackware/contrib/packages/</a></li>
+<li>URL: <a href="ftp://gsotirov79.ddns.homelan.bg/pub/slackware/contrib/packages/">ftp://gsotirov79.ddns.homelan.bg/pub/slackware/contrib/packages/</a></li>
+<li>URL: <a href="http://www.linuxpackages.net/search_view.php?cstat=17846">My packages in LinuxPacakges</a></li>
+<li>Tools used: Slackware Package Tools</li>
 </ul>
 </div>
 </div>
