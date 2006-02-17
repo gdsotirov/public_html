@@ -5,9 +5,13 @@
 abstract class CAgregator {
   protected $parser = null;
   protected $URL = "";
+  protected $LANG = "en";
 
   public function __construct($url) {
     $this->URL = $url;
+  }
+  public function setLang($lang) {
+    $this->LANG = $lang;
   }
   abstract public function agregate();
 }
@@ -25,6 +29,23 @@ class CAgregateBlog extends CAgregator {
      "2LINK" => "",
      "2TITLE" => ""
   );
+
+  private function getInterMsg($id) {
+    if ( $this->LANG == "en" ) {
+      switch ($id) {
+        case 'not_accessible' : return "Could not access content right now.";
+        case 'xml_error'      : return "XML error: %s at line %d";
+        default             : return "";
+      }
+    }
+    else {/* if LANG == "bg" */
+      switch ($id) {
+        case 'not_accessible' : return "В момента няма достъп до съдържанието.";
+        case 'xml_error'      : return "XML грешка: %s на ред %d";
+        default             : return "";
+      }
+    }
+  }
 
   private function startElement($parser, $name, $attrs) {
     switch ($name) {
@@ -96,13 +117,13 @@ class CAgregateBlog extends CAgregator {
     xml_set_character_data_handler($this->parser, "characterData");
 
     if (!($fp = fopen($this->URL, "r"))) {
-      print("Could not access content now.");
+      print($this->getInterMsg('not_accessible'));
       return -1;
     }
 
     while ($data = fread($fp, 4096)) {
       if (!xml_parse($this->parser, $data, feof($fp))) {
-        sprintf("XML error: %s at line %d",
+        sprintf($this->getInterMsg('xml_error'),
                 xml_error_string(xml_get_error_code($this->parser)),
                 xml_get_current_line_number($this->parser));
         return -1;
