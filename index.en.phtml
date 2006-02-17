@@ -1,6 +1,6 @@
 <?php
   print("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
-  include("syndicate.php");
+  include("agregator.php");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -80,8 +80,9 @@ watch <a href="http://www.formula1.com" hreflang="en">Formula 1</a>.</p>
 <h2>Blog</h2>
 <p>
 <?php
-  $syn = new CAgregateBlog("http://gdsotirov.blogspot.com/atom.xml");
-  $syn->agregate();
+  $agregator = new CAgregateBlog("http://gdsotirov.blogspot.com/atom.xml");
+  $agregator->setLang("en");
+  $agregator->agregate();
 ?>
 </p>
 <p class="align-right">
