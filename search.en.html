@@ -67,24 +67,52 @@ possibilities.</p>
 <div id="SearchForm">
 <h2><a name="Search">Search</a></h2>
 <!-- Search Google -->
-<div id="GoogleLogo">
+<h3>Google<sup>&trade;</sup></h3>
+<div id="GoogleLogo" class="Logo">
 <a href="http://www.google.com/search" hreflang="en">
-<img alt="Google SafeSearch Logo" height="45" src="img/logo_google-safe.png" width="115" />
+<img alt="Google SafeSearch Logo" height="45" src="img/logo_google-safe" width="115" />
 </a></div>
 <form action="http://www.google.com/custom" id="GoogleSearch" method="get">
-<p>
-<input name="safe" type="hidden" value="vss" />
+<p><input name="safe" type="hidden" value="vss" />
 <input name="cof" type="hidden" value="S:gsotirov79.ddns.homelan.bg/;AWFID:262c29acacd332f0;" />
 <input name="domains" type="hidden" value="gsotirov79.ddns.homelan.bg/~gsotirov/" />
+<input name="hl" type="hidden" value="en" />
 <input name="q" maxlength="255" size="40" type="text" value="" />
-<input name="sa" type="submit" value="Google Search" /><br />
+<input name="sa" type="submit" value="Search" /><br />
 <label for="search_www"><input id="search_www" name="sitesearch" type="radio"
-value="" />Search WWW</label>
+value="" />Search web</label>
 <label for="search_site"><input checked="checked" id="search_site"
-name="sitesearch" type="radio" value="gsotirov79.ddns.homelan.bg/" />Search gsotirov</label>
-</p>
+name="sitesearch" type="radio" value="gsotirov79.ddns.homelan.bg/" />Search gsotirov</label><br />
+<label for="lr"><input id="lr" name="lr" value="lang_bg" type="checkbox" />Pages in Bulgarian</label>
+<label for="cr"><input id="cr" name="cr" value="countryBG" type="checkbox" />Pages from Bulgaria</label></p>
 </form>
 <!-- Search Google -->
+<!-- Search from MSN -->
+<h3>MSN<sub>&reg;</sub></h3>
+<div id="MSNLogo" class="Logo">
+<a href="http://search.msn.com/">
+<img alt="MSN Search" src="img/logo_msn-search" /></a>
+</div>
+<form action="http://search.msn.com/results.aspx" id="MSNSearch" method="get">
+<p><input type="text" name="q" size="40" />
+<input type="submit" value="Search" /><br />
+<label for="type1"><input id="type1" name="q1" value="" type="radio" />Search web</label>
+<label for="type2"><input id="type2" name="q1" value="site:gsotirov79.ddns.homelan.bg" type="radio" checked="checked" />Search this site</label></p>
+</form>
+<!-- Search from MSN -->
+<!-- Yahoo! Search -->
+<h3>Yahoo!<sub>&reg;</sub></h3>
+<div id="YahooLogo" class="Logo">
+<a href="http://search.yahoo.com/">
+<img alt="Yahoo Search" src="img/logo_yahoo-search" /></a>
+</div>
+<form action="http://search.yahoo.com/search" id="YahooSearch" method="get">
+<p><input type="text" name="p" size="40" />
+<input type="hidden" name="fr" value="yscpb" />
+<input type="submit" value="Search" /><br />
+<label for="ysvs0"><input id="ysvs0" name="vs" type="radio" value="" />Search the web</label>&nbsp;<label for="ysvs1"><input id="ysvs1" name="vs" type="radio" value="gsotirov79.ddns.homelan.bg" checked="checked" />Search this site</label></p>
+</form>
+<!-- End Yahoo! Search -->
 </div>
 </div>
 
