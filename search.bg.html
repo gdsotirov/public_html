@@ -78,7 +78,9 @@ MSN.
 <input name="cof" type="hidden" value="S:gsotirov79.ddns.homelan.bg/;AWFID:262c29acacd332f0;" />
 <input name="domains" type="hidden" value="gsotirov79.ddns.homelan.bg/" />
 <input name="hl" type="hidden" value="bg" />
-<input name="q" maxlength="255" size="40" type="text" value="" />
+<input name="ie" type="hidden" value="UTF-8" />
+<input name="oe" type="hidden" value="UTF-8" />
+<input name="q" type="text" maxlength="255" size="40" value="" />
 <input name="sa" type="submit" value="Търсене" /><br />
 <label for="search_www"><input id="search_www" name="sitesearch" type="radio"
 value="" />Търсене в мрежата</label>
@@ -95,10 +97,10 @@ name="sitesearch" type="radio" value="gsotirov79.ddns.homelan.bg/" />Търсе�
 <img alt="MSN Търсене" src="img/logo_msn-search" /></a>
 </div>
 <form action="http://search.msn.com/results.aspx" id="MSNSearch" method="get">
-<p><input type="text" name="q" size="40" />
+<p><input name="q" type="text" size="40" />
 <input type="submit" value="Търсене" /><br />
-<label for="type1"><input id="type1" name="q1" value="" type="radio" />Търсене в мрежата</label>
-<label for="type2"><input id="type2" name="q1" value="site:gsotirov79.ddns.homelan.bg" type="radio" checked="checked" />Търсене в тези страници</label></p>
+<label for="type1"><input name="q1" id="type1" value="" type="radio" />Търсене в мрежата</label>
+<label for="type2"><input name="q1" id="type2" value="site:gsotirov79.ddns.homelan.bg" type="radio" checked="checked" />Търсене в тези страници</label></p>
 </form>
 <!-- Search from MSN -->
 <!-- Yahoo! Search -->
@@ -108,10 +110,11 @@ name="sitesearch" type="radio" value="gsotirov79.ddns.homelan.bg/" />Търсе�
 <img alt="Yahoo Търсене" src="img/logo_yahoo-search" /></a>
 </div>
 <form action="http://search.yahoo.com/search" id="YahooSearch" method="get">
-<p><input type="text" name="p" size="40" />
-<input type="hidden" name="fr" value="yscpb" />
+<p><input name="p" type="text" size="40" />
+<input name="ei" type="hidden" value="UTF-8" />
+<input name="fr" type="hidden" value="yscpb" />
 <input type="submit" value="Търсене" /><br />
-<label for="ysvs0"><input id="ysvs0" name="vs" type="radio" value="" />Търсене в мрежата</label>&nbsp;<label for="ysvs1"><input id="ysvs1" name="vs" type="radio" value="gsotirov79.ddns.homelan.bg" checked="checked" />Търсене в тези страници</label></p>
+<label for="ysvs0"><input name="vs" id="ysvs0" type="radio" value="" />Търсене в мрежата</label>&nbsp;<label for="ysvs1"><input name="vs" id="ysvs1" type="radio" value="gsotirov79.ddns.homelan.bg" checked="checked" />Търсене в тези страници</label></p>
 </form>
 <!-- End Yahoo! Search -->
 </div>
