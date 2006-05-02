@@ -243,14 +243,12 @@
 
   input, select {
     background-color: #fff;
-    border: 0.1em inset #aaa;
     color: #000;
-    padding: 0.1em 0;
+    font: inherit;
   }
 
   input[type=submit], input[type=reset] {
     background-color: #ccc;
-    border: 0.1em outset #aaa;
     color: inherit;
     font-weight: bold;
   }
