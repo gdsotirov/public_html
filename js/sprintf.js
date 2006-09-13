@@ -1,7 +1,7 @@
 <!--
 /* Author: Jan Moesen (jan.moesen.nu)
  * URL: http://jan.moesen.nu/code/javascript/sprintf-and-printf-in-javascript/
- * Modified by: George D. Sotirov, gdsotirov@dir.bg
+ * Modified by: Georgi D. Sotirov, gdsotirov@dir.bg
  */
 
 /* Function   : sprintf

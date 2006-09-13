@@ -1,5 +1,5 @@
-/* George Dimitrov Sotirov's Personal Home Page
- * Written by George D. Sotirov, gdsotirov@dir.bg
+/* Georgi Dimitrov Sotirov's Personal Home Page
+ * Written by Georgi D. Sotirov, gdsotirov@dir.bg
  *
  * Scripting
  */
