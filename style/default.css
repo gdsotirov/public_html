@@ -181,9 +181,26 @@
     background-color: #ccc;
     color: inherit;
   }
-  
+
+  .centred {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .no_top_margin {
     margin-top: 0;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  .center {
+    text-align: center;
   }
 }
 
