@@ -20,29 +20,27 @@ abstract class CAgregator {
  * Purpose     : Agregate content in Atom format.
  */
 class CAgregateBlog extends CAgregator {
+  private $collect = 'no';
+  private $title = "";
+  private $href = "";
+  private $published = "";
   protected $output = false;
   protected $depth = 0;
   protected $format = "raw";
-  protected $map_array = array(
-     "2ENTRY" => "",
-     "2ISSUED" => "i",
-     "2LINK" => "",
-     "2TITLE" => ""
-  );
 
   private function getInterMsg($id) {
     if ( $this->LANG == "en" ) {
       switch ($id) {
         case 'not_accessible' : return "Could not access content right now.";
         case 'xml_error'      : return "XML error: %s at line %d";
-        default             : return "";
+        default               : return "";
       }
     }
     else {/* if LANG == "bg" */
       switch ($id) {
         case 'not_accessible' : return "В момента няма достъп до съдържанието.";
         case 'xml_error'      : return "XML грешка: %s на ред %d";
-        default             : return "";
+        default               : return "";
       }
     }
   }
@@ -52,27 +50,19 @@ class CAgregateBlog extends CAgregator {
       case "FEED":
       case "ENTRY":
       case "AUTHOR": $this->depth += 1; break;
-      case "ISSUED": $this->format = "date"; break;
       default: break;
     }
 
     $key = $this->depth."$name";
     switch ($key) {
+      case "2TITLE": $this->collect = 'title'; break;
       case "2LINK": if ( isset($attrs["REL"]) ) {
-                      $rel = $attrs["REL"];
-                      if ( $rel == "alternate" )
-                        echo "<a href=\"".$attrs["HREF"]."\">";
+                      if ( $attrs["REL"] == "alternate" )
+                        $this->href = $attrs["HREF"];
                     }
                     break;
-      default: if (isset($this->map_array[$key])) {
-                 $this->output = true;
-                 $tag = $this->map_array[$key];
-                 if ($tag != "")
-                   echo "<$tag>";
-               }
-               else
-                   $this->output = false;
-               break;
+      case "2PUBLISHED": $this->collect = 'published'; break;
+      default: break;
     }
   }
 
@@ -81,31 +71,26 @@ class CAgregateBlog extends CAgregator {
       case "FEED":
       case "ENTRY":
       case "AUTHOR": $this->depth -= 1; break;
-      case "ISSUED": $this->format = "raw"; break;
       default: break;
     }
 
     $key = $this->depth."$name";
     switch ($key) {
-      case "2TITLE": echo "</a><br />\n";
-      default: if (isset($this->map_array[$key])) {
-                 $this->output = true;
-                 $tag = $this->map_array[$key];
-                 if ($tag != "")
-                   echo "</$tag>";
-               }
-               else
-                 $this->output = false;
-               break;
+      case "2TITLE":
+      case "2LINK":
+      case "2PUBLISHED": $this->collect = 'no'; break;
+      case "1ENTRY": echo "<i>".$this->published."</i> - ";
+                     echo "<a href=\"".$this->href."\">";
+                     echo $this->title."</a><br />\n"; break;
+      default: break;
     }
   }
 
   private function characterData($parser, $data) {
-    if ($this->output) {
-      switch ($this->format) {
-        case "date": echo date("Y-m-d H:i", strtotime($data)); break;
-        default: echo $data;
-      }
+    switch ($this->collect) {
+      case 'title': $this->title = $data; break;
+      case 'published': $this->published = date("Y-m-d H:i", strtotime($data));
+      default: break;
     }
   }
 
