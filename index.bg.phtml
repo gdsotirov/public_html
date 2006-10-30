@@ -82,7 +82,7 @@
 <h2>Дневник</h2>
 <p>
 <?php
-  $agregator = new CAgregateBlog("http://gdsotirov-bg.blogspot.com/atom.xml");
+  $agregator = new CAgregateBlog("http://gdsotirov-bg.blogspot.com/feeds/posts/default", 10);
   $agregator->setLang("bg");
   $agregator->agregate();
 ?>

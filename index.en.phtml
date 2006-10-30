@@ -81,7 +81,7 @@ watch <a href="http://www.formula1.com" hreflang="en">Formula 1</a>.</p>
 <h2>Blog</h2>
 <p>
 <?php
-  $agregator = new CAgregateBlog("http://gdsotirov.blogspot.com/atom.xml");
+  $agregator = new CAgregateBlog("http://gdsotirov.blogspot.com/feeds/posts/default", 10);
   $agregator->setLang("en");
   $agregator->agregate();
 ?>
