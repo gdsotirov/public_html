@@ -3,12 +3,14 @@
  * Purpose     : Agregate content from external sources.
  */
 abstract class CAgregator {
+  protected $max_cnt = 10;
   protected $parser = null;
   protected $URL = "";
   protected $LANG = "en";
 
-  public function __construct($url) {
+  public function __construct($url, $max_cnt) {
     $this->URL = $url;
+    $this->max_cnt = $max_cnt;
   }
   public function setLang($lang) {
     $this->LANG = $lang;
@@ -20,6 +22,7 @@ abstract class CAgregator {
  * Purpose     : Agregate content in Atom format.
  */
 class CAgregateBlog extends CAgregator {
+  private $cnt = 1; /* items count */
   private $collect = 'no';
   private $title = "";
   private $href = "";
@@ -79,9 +82,13 @@ class CAgregateBlog extends CAgregator {
       case "2TITLE":
       case "2LINK":
       case "2PUBLISHED": $this->collect = 'no'; break;
-      case "1ENTRY": echo "<i>".$this->published."</i> - ";
-                     echo "<a href=\"".$this->href."\">";
-                     echo $this->title."</a><br />\n"; break;
+      case "1ENTRY": if ( $this->cnt <= $this->max_cnt ) {
+                       echo "<i>".$this->published."</i> - ";
+                       echo "<a href=\"".$this->href."\">";
+                       echo $this->title."</a><br />\n";
+                       $this->cnt++;
+                     }
+                     break;
       default: break;
     }
   }
