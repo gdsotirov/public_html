@@ -88,6 +88,7 @@ class CAgregateBlog extends CAgregator {
                        echo $this->title."</a><br />\n";
                        $this->cnt++;
                      }
+                     $this->title = "";
                      break;
       default: break;
     }
@@ -95,8 +96,10 @@ class CAgregateBlog extends CAgregator {
 
   private function characterData($parser, $data) {
     switch ($this->collect) {
-      case 'title': $this->title = $data; break;
+      case 'title'    : $this->title .= $data;
+                        break;
       case 'published': $this->published = date("Y-m-d H:i", strtotime($data));
+                        break;
       default: break;
     }
   }
