@@ -357,4 +357,8 @@
     margin-left: 12em;
     padding-left: 1em;
   }
+
+  div#SkypeButton, div#SkypeButton p {
+    display: inline;
+  }
 }
