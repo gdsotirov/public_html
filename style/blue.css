@@ -358,7 +358,28 @@
     padding-left: 1em;
   }
 
-  div#SkypeButton, div#SkypeButton p {
+  div#SkypeButton, div#SkypeButton p, div#SkypeButton div {
     display: inline;
+    float: left;
+    margin: 0;
+  }
+
+  div#SkypeButton img {
+    margin: 0 !important;
+    vertical-align: middle !important;
+  }
+
+  ul.share-buttons{
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul.share-buttons li{
+    display: inline;
+  }
+
+  ul.share-buttons img{
+    height: 32px;
+    width: 32px;
   }
 }
