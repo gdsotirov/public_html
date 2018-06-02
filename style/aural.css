@@ -1,6 +1,6 @@
 /* Georgi D. Sotirov's Personal Home Page Styles
  *
- * Copyright 2004-2005 Georgi D. Sotirov <gdsotirov@dir.bg>
+ * Copyright 2004-2018 Georgi D. Sotirov <gdsotirov@dir.bg>
  *
  * Media: arual
  * Theme: Default
@@ -30,7 +30,7 @@
   }
 
   abbr {
-    speak: spell-out;
+    speak: spell-out; /* No such valude in CSS 3 */
   }
 
   acronym {
