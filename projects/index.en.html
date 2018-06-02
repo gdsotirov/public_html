@@ -10,14 +10,14 @@
 <meta name="author" content="Georgi D. Sotirov" />
 <meta name="description" content="Search Georgi Sotirov's Personal Pages" />
 <meta name="keywords" content="Georgi Sotirov, personal pages, projects" />
-<meta name="copyright" content="2004-2017 Georgi D. Sotirov" />
+<meta name="copyright" content="2004-2018 Georgi D. Sotirov" />
 <title>Georgi Sotirov's Personal Pages: Projects</title>
 <!-- Stylesheets -->
 <link rel="stylesheet" media="aural" title="Default" type="text/css" href="../style/aural.css" />
 <link rel="stylesheet" media="handheld" title="Default" type="text/css" href="../style/handheld.css" />
 <link rel="stylesheet" media="print, projection, screen, tv" title="Default" type="text/css" href="../style/blue.css" />
 <link rel="alternate stylesheet" media="print, projection, screen, tv" title="Gray" type="text/css" href="../style/gray.css" />
-<!-- Icon -->
+<!-- Icons -->
 <link rel="icon" href="../img/favicon" />
 <link rel="shortcut icon" href="../img/favicon" />
 <!-- Links -->
@@ -39,8 +39,9 @@
 <a accesskey="D" href="#Desktop"><span class="u">D</span>esktop applications</a>
 <a accesskey="W" href="#Web"><span class="u">W</span>eb applications</a>
 <a accesskey="S" href="#Sites"><span class="u">S</span>ites</a>
+<a accesskey="B" href="#Databases">Data<span class="u">b</span>ases</a>
 <a accesskey="T" href="#Translations"><span class="u">T</span>ranslations</a>
-<a accesskey="O" href="#Others"><span class="u">O</span>thers</a>
+<a accesskey="P" href="#Packaging"><span class="u">P</span>ackaging</a>
 </p></map>
 <map id="MenuGeneral">
 <p>
@@ -59,6 +60,9 @@
 
 <div id="Content">
 
+<p>This year I'll be <a href="http://gdsotirov.blogspot.com/2018/05/migration-to-git-and-github.html">migrating</a>
+all my personal projects to <a href="https://github.com/">GitHub</a>.</p>
+
 <div id="Desktop">
 <h2>Desktop Applications</h2>
 <div id="ProjectDAC">
@@ -67,7 +71,7 @@
 diploma thesis. The application calculates the parameters of a VSAT dish antenna
 and shows some nice graphics and schemes.</p>
 <ul>
-<li>CVS: <a href="/viewvc/viewvc.cgi/cvs/projects/cpp/dac/">projects/cpp/dac/</a></li>
+<li>Source code: <a href="/viewvc/viewvc.cgi/cvs/projects/cpp/dac/">projects/cpp/dac/</a></li>
 <li>Bug reports: <a href="/bugzilla/">Sotirov-bg.net Bugzilla</a></li>
 <li>Technologies used: <a href="http://www.stroustrup.com/C++.html">C++</a></li>
 <li>Development environment: <a href="https://www.embarcadero.com/products/cbuilder">Borland C++Builder</a> 5.0</li>
@@ -86,8 +90,8 @@ for a given period and shows the account balance. It can calculate both simple
 and compaund interest.</p>
 <ul>
 <li>License: <a href="http://www.gnu.org/copyleft/gpl.html">GPL v2</a></li>
-<li>URL: <a href="/apps/calc/icalc/">Interest Calculator</a></li>
-<li>CVS: <a href="/viewvc/viewvc.cgi/cvs/projects/web/icalc/">projects/web/icalc</a></li>
+<li><abbr title="Uniform Resource Locator">URL</abbr>: <a href="/apps/calc/icalc/">Interest Calculator</a></li>
+<li>Source code: <a href="/viewvc/viewvc.cgi/cvs/projects/web/icalc/">projects/web/icalc</a></li>
 <li>Bug reports: <a href="/bugzilla/">Sotirov-bg.net Bugzilla</a></li>
 <li>Technologies used:
 <a href="http://www.w3.org/MarkUp/"><abbr title="Extensible HyperText Markup Language">XHTML</abbr></a>,
@@ -105,8 +109,8 @@ payment and the amount you can get for a given mortgage. It also can show
 amortization schedule.</p>
 <ul>
 <li>License: <a href="http://www.gnu.org/copyleft/gpl.html">GPL v2</a></li>
-<li>URL: <a href="/apps/calc/mcalc/">Mortgage Calculator</a></li>
-<li>CVS: <a href="/viewvc/viewvc.cgi/cvs/projects/web/mcalc/">projects/web/icalc</a></li>
+<li><abbr title="Uniform Resource Locator">URL</abbr>: <a href="/apps/calc/mcalc/">Mortgage Calculator</a></li>
+<li>Source code: <a href="/viewvc/viewvc.cgi/cvs/projects/web/mcalc/">projects/web/icalc</a></li>
 <li>Bug reports: <a href="/bugzilla/">Sotirov-bg.net Bugzilla</a></li>
 <li>Technologies used:
 <a href="http://www.w3.org/MarkUp/"><abbr title="Extensible HyperText Markup Language">XHTML</abbr></a>,
@@ -127,9 +131,9 @@ inform the user of his existence and to direct the user to the hosted
 pages and applications. It provides information about the status of the
 machine and statistical info about the used resources.</p>
 <ul>
-<li>URL: <a href="/">http://sotirov-bg.net</a></li>
-<li>CVS: <a href="/viewvc/viewvc.cgi/cvs/projects/sites/sotirov-bg.net/">projects/sites/sotirov-bg.net</a></li>
-<li><a href="/bugzilla/">Sotirov-bg.net Bugzilla</a></li>
+<li><abbr title="Uniform Resource Locator">URL</abbr>: <a href="/">http://sotirov-bg.net</a></li>
+<li>Source code: <a href="/viewvc/viewvc.cgi/cvs/projects/sites/sotirov-bg.net/">projects/sites/sotirov-bg.net</a></li>
+<li>Bug reports: <a href="/bugzilla/">Sotirov-bg.net Bugzilla</a></li>
 <li>Technologies used:
 <a href="http://www.w3.org/MarkUp/"><abbr title="Extensible HyperText Markup Language">XHTML</abbr></a>,
 <a href="http://www.w3.org/Style/CSS/"><abbr title="Cascading Style Sheets">CSS</abbr></a>,
@@ -142,24 +146,41 @@ machine and statistical info about the used resources.</p>
 <p class="text">Mine personal pages. Contain information about me and the
 things I do.</p>
 <ul>
-<li>URL: <a href="/~gsotirov/">~gsotirov</a></li>
-<li>CVS: <a href="/viewvc/viewvc.cgi/cvs/projects/sites/personal/">projects/sites/personal</a></li>
+<li><abbr title="Uniform Resource Locator">URL</abbr>: <a href="/~gsotirov/">~gsotirov</a></li>
+<li>Source code: <a href="/viewvc/viewvc.cgi/cvs/projects/sites/personal/">projects/sites/personal</a></li>
 <li>Technologies used:
 <a href="http://www.w3.org/MarkUp/"><abbr title="Extensible HyperText Markup Language">XHTML</abbr></a>,
 <a href="http://www.w3.org/Style/CSS/"><abbr title="Cascading Style Sheets">CSS</abbr></a></li>
 </ul>
 </div>
-<div id="wedding">
-<h3>Sotirov's Wedding</h3>
-<p class="text">Wedding album of Sotirov family. The project is designed and
-released by my wife Iva, but my part isn't small. Giving technical help,
-help for complience with the standarts and edit.</p>
+<div id="iva12">
+<h3>iva-12.com</h3>
+<p class="text">The site of a firm for production of confectionery.</p>
 <ul>
-<li>URL: n/a</li>
-<li>CVS: <a href="/viewvc/viewvc.cgi/cvs/projects/sites/wedding/">projects/sites/wedding</a></li>
+<li><abbr title="Uniform Resource Locator">URL</abbr>: <a href="http://iva-12.com/">http://iva-12.com</a></li>
+<li>Source code: <a href="/viewvc/viewvc.cgi/cvs/projects/sites/iva-12.com/">projects/sites/iva-12.com</a></li>
 <li>Technologies used:
 <a href="http://www.w3.org/MarkUp/"><abbr title="Extensible HyperText Markup Language">XHTML</abbr></a>,
 <a href="http://www.w3.org/Style/CSS/"><abbr title="Cascading Style Sheets">CSS</abbr></a></li>
+</ul>
+</div>
+</div>
+
+<div id="Databases">
+<h2>Databases</h2>
+<div id="hr_schema">
+<h3>HR Schema</h3>
+<p class="text">An example HR database for managment of company's organization,
+employees, etc.</p>
+<ul>
+<li>License: <a href="http://www.gnu.org/copyleft/gpl.html">GPL v2</a></li>
+<li><abbr title="Uniform Resource Locator">URL</abbr>: <a href="https://github.com/gdsotirov/hr_schema">Project page</a></li>
+<li>Source code: <a href="https://github.com/gdsotirov/hr_schema/tree/master">Repository</a></li>
+<li>Bug reports: <a href="https://github.com/gdsotirov/hr_schema/issues">Issues</a></li>
+<li>Applications used: <a href="https://www.mysql.com/products/workbench/" hreflang="en">MySQL Workbench</a></li>
+<li>Technologies used: <a href="https://en.wikipedia.org/wiki/SQL"><abbr title="Structured Query Language">SQL</abbr></a>,
+                       <a href="https://dev.mysql.com/downloads/mysql/">MySQL</a></li>
+<li>Download: <a href="https://github.com/gdsotirov/hr_schema/archive/master.zip">ZIP archive</a></li>
 </ul>
 </div>
 </div>
@@ -175,34 +196,35 @@ that targets quality translation and localization of the
 <a href="https://www.mozilla.org">Mozilla Organization</a> products.</p>
 <ul>
 <li>License: <a href="http://www.gnu.org/copyleft/gpl.html">GPL v2</a></li>
-<li>URL: <a href="https://bitbucket.org/ogi/mozilla.bg/overview">Project page</a></li>
-<li>Source: <a href="https://bitbucket.org/ogi/mozilla.bg/src">Repository</a></li>
+<li><abbr title="Uniform Resource Locator">URL</abbr>: <a href="https://bitbucket.org/ogi/mozilla.bg/overview">Project page</a></li>
+<li>Source code: <a href="https://bitbucket.org/ogi/mozilla.bg/src">Repository</a></li>
 <li>Bug report: <a href="https://bitbucket.org/ogi/mozilla.bg/issues">Issues</a></li>
 <li>Download: by <a href="http://ftp.sotirov-bg.net/pub/contrib/mozilla/bugzilla/l10n/"><abbr title="Hypertext Transfer Protocol">HTTP</abbr></a> and
-	         <a href="ftp://sotirov-bg.net/pub/contrib/mozilla/bugzilla/l10n/"><abbr title="File Transfer Protocol">FTP</abbr></a></li>
+                 <a href="ftp://sotirov-bg.net/pub/contrib/mozilla/bugzilla/l10n/"><abbr title="File Transfer Protocol">FTP</abbr></a></li>
 </ul>
 </div>
 </div>
 
-<div id="Others">
-<h2>Others</h2>
+<div id="Packaging">
+<h2>Packaging</h2>
 <div id="ProjectSlackPack">
 <h3>Slackware packages</h3>
 <p class="text">I use <a href="http://www.slackware.com/">Slackware</a> Linux
 since 2001. From the begining of 2005 I've start building packages for my
 machine and I've decided to share them. You can <a hreflang="en" href="http://sotirov-bg.net/slackpack/">
 visit SlackPack</a> - the site devoted to my <a href="http://www.slackware.com/">
-Slackware</a> packages. Some of them are registered on the specialized
-site <a href="http://www.linuxpackages.net/">LinuxPackages</a> also.</p>
+Slackware</a> packages.</p>
 <ul>
-<li>URL: <a hreflang="en" href="http://sotirov-bg.net/slackpack/">SlackPack</a> (site),
-         repositories by <a href="http://ftp.sotirov-bg.net/pub/contrib/slackware/packages/"><abbr title="Hypertext Transfer Protocol">HTTP</abbr></a> and
-         <a href="ftp://sotirov-bg.net/pub/contrib/slackware/packages/"><abbr title="File Transfer Protocol">FTP</abbr></a></li>
-<li>URL: <a href="http://www.linuxpackages.net/search_view.php?cstat=17846">My packages in LinuxPacakges</a></li>
+<li><abbr title="Uniform Resource Locator">URL</abbr>:
+    <a hreflang="en" href="http://sotirov-bg.net/slackpack/">SlackPack</a> (site),
+    repositories by <a href="http://ftp.sotirov-bg.net/pub/contrib/slackware/packages/"><abbr title="Hypertext Transfer Protocol">HTTP</abbr></a> and
+    <a href="ftp://sotirov-bg.net/pub/contrib/slackware/packages/"><abbr title="File Transfer Protocol">FTP</abbr></a></li>
+<li>Source code: <a href="/viewvc/viewvc.cgi/cvs/projects/web/slackpack/">projects/web/slackpack/</a></li>
+<li>Bug reports: <a href="/bugzilla/">Sotirov-bg.net Bugzilla</a></li>
 <li>Technologies used: <a href="http://www.slackbook.org/html/package-management-making-packages.html">Slackware Package Tools</a>,
 <a href="http://www.gnu.org/software/bash/">Bash</a>,
 <a href="http://www.perl.com/">Perl</a>,
-<a href="http://www.mysql.com/">MySQL</a>,
+<a href="https://dev.mysql.com/downloads/mysql/">MySQL</a>,
 <a href="http://www.w3.org/MarkUp/"><abbr title="Extensible HyperText Markup Language">XHTML</abbr></a>,
 <a href="http://www.w3.org/Style/CSS/"><abbr title="Cascading Style Sheets">CSS</abbr></a></li>
 </ul>
