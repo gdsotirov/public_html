@@ -1,6 +1,6 @@
 <?php
   print("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
-  include("agregator.php");
+  include("aggregator.php");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -91,9 +91,9 @@ I'm visting races.</p>
 <h2>Blog</h2>
 <p>
 <?php
-  $agregator = new CAgregateBlog("http://gdsotirov.blogspot.com/feeds/posts/default", 10);
-  $agregator->setLang("en");
-  $agregator->agregate();
+  $aggregator = new CAggregateBlog("http://gdsotirov.blogspot.com/feeds/posts/default", 10);
+  $aggregator->setLang("en");
+  $aggregator->aggregate();
 ?>
 </p>
 <p class="align-right">

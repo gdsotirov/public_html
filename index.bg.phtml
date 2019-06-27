@@ -1,6 +1,6 @@
 <?php
   print("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
-  include("agregator.php");
+  include("aggregator.php");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -91,9 +91,9 @@ href="http://ecatalog.nbu.bg/default.asp?V_Year=2012&amp;PageShow=programpresent
 <h2>Дневник</h2>
 <p>
 <?php
-  $agregator = new CAgregateBlog("http://gdsotirov-bg.blogspot.com/feeds/posts/default", 10);
-  $agregator->setLang("bg");
-  $agregator->agregate();
+  $aggregator = new CAggregateBlog("http://gdsotirov-bg.blogspot.com/feeds/posts/default", 10);
+  $aggregator->setLang("bg");
+  $aggregator->aggregate();
 ?>
 </p>
 <p class="align-right">
