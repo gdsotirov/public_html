@@ -8,15 +8,17 @@
  * Description: C like sprintf function.
  */
 function sprintf(format) {
-  if ( !arguments || arguments.length < 1 || !RegExp )
+  if ( arguments.length < 1 )
     return;
 
   var str = arguments[0];
   var re = /([^%]*)%(.|0|\x20)?(-)?(\d+)?(\.\d+)?(%|b|c|d|u|f|o|s|x|X)(.*)/;
-  var a = b = [], numSubstitutions = 0, numMatches = 0;
+  var a = [];
+  var numSubstitutions = 0;
+  var numMatches = 0;
 
   while ( a = re.exec(str) ) {
-    var leftpart = a[1], pPad = a[2], pJustify = a[3], pMinLength = a[4];
+    var leftpart = a[1];
     var pPrecision = a[5], pType = a[6], rightPart = a[7];
 
     numMatches++;
@@ -25,24 +27,13 @@ function sprintf(format) {
     else {
       numSubstitutions++;
       if ( numSubstitutions >= arguments.length )
-        alert('Error! Not enough function arguments (' + (arguments.length - 1) + ', excluding the string)\nfor the number of substitution parameters in string (' + numSubstitutions + ' so far).');
+        console.log('Error! Not enough function arguments (' + (arguments.length - 1) + ', excluding the string)\nfor the number of substitution parameters in string (' + numSubstitutions + ' so far).');
 
       var param = arguments[numSubstitutions];
-      var pad = '';
-      if ( pPad && pPad.substr(0,1) == "'")
-        pad = leftpart.substr(1, 1);
-      else if ( pPad )
-        pad = pPad;
-      var justifyRight = false;
-      if ( pJustify && pJustify == "-" )
-        justifyRight = true;
-      var minLength = -1;
-      if (pMinLength)
-        minLength = parseInt(pMinLength);
       var precision = -1;
       if ( pPrecision && pType == 'f' )
         precision = parseInt(pPrecision.substring(1));
-      var subst = param;
+      var subst;
       switch ( pType ) {
         case 'b': subst = parseInt(param).toString(2);
                   break;
