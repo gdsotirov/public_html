@@ -22,7 +22,7 @@ var strEN = new Array(
 var strLang = new Array(strBG, strEN);
 
 /* Function   : getLangId
- * Description: Retrive language id based on language i18n name.
+ * Description: Retrieve language id based on language i18n name.
  */
 function getLangId(langStr) {
   switch (langStr) {
@@ -39,7 +39,6 @@ function getLangId(langStr) {
  */
 function translateString(strId) {
   var htmltags = document.getElementsByTagName("html");
-  /* TODO: Check if this is collection or not. */
   var htmltag = htmltags[0];
   var lang = htmltag.lang;
   var langId = getLangId(lang);
