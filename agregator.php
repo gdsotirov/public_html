@@ -1,8 +1,8 @@
 <?php
 /* Class       : CAgregator
- * Purpose     : Agregate content from external sources.
+ * Purpose     : Aggregate content from external sources.
  */
-abstract class CAgregator {
+abstract class CAggregator {
   protected $max_cnt = 10;
   protected $parser = null;
   protected $URL = "";
@@ -15,13 +15,13 @@ abstract class CAgregator {
   public function setLang($lang) {
     $this->LANG = $lang;
   }
-  abstract public function agregate();
+  abstract public function aggregate();
 }
 
 /* Class       : CAgregateAtom
- * Purpose     : Agregate content in Atom format.
+ * Purpose     : Aggregate content in Atom format.
  */
-class CAgregateBlog extends CAgregator {
+class CAggregateBlog extends CAggregator {
   private $cnt = 1; /* items count */
   private $collect = 'no';
   private $title = "";
@@ -34,18 +34,20 @@ class CAgregateBlog extends CAgregator {
   private function getInterMsg($id) {
     if ( $this->LANG == "en" ) {
       switch ($id) {
-        case 'not_accessible' : return "Could not access content right now.";
-        case 'xml_error'      : return "XML error: %s at line %d";
-        default               : return "";
+        case 'not_accessible' : $err_msg = "Could not access content right now."; break;
+        case 'xml_error'      : $err_msg = "XML error: %s at line %d";            break;
+        default               : $err_msg = "";
       }
     }
     else {/* if LANG == "bg" */
       switch ($id) {
-        case 'not_accessible' : return "В момента няма достъп до съдържанието.";
-        case 'xml_error'      : return "XML грешка: %s на ред %d";
-        default               : return "";
+        case 'not_accessible' : $err_msg = "В момента няма достъп до съдържанието."; break;
+        case 'xml_error'      : $err_msg = "XML грешка: %s на ред %d";               break;
+        default               : $err_msg = "";
       }
     }
+
+    return $err_msg;
   }
 
   private function startElement($parser, $name, $attrs) {
@@ -59,9 +61,8 @@ class CAgregateBlog extends CAgregator {
     $key = $this->depth."$name";
     switch ($key) {
       case "2TITLE": $this->collect = 'title'; break;
-      case "2LINK": if ( isset($attrs["REL"]) ) {
-                      if ( $attrs["REL"] == "alternate" )
-                        $this->href = $attrs["HREF"];
+      case "2LINK": if ( isset($attrs["REL"]) && $attrs["REL"] == "alternate" ) {
+                      $this->href = $attrs["HREF"];
                     }
                     break;
       case "2PUBLISHED": $this->collect = 'published'; break;
@@ -104,7 +105,7 @@ class CAgregateBlog extends CAgregator {
     }
   }
 
-  public function agregate() {
+  public function aggregate() {
     $this->parser = xml_parser_create();
     xml_set_object($this->parser, $this);
     xml_parser_set_option($this->parser, XML_OPTION_CASE_FOLDING, true);
@@ -118,9 +119,9 @@ class CAgregateBlog extends CAgregator {
 
     while ($data = fread($fp, 4096)) {
       if (!xml_parse($this->parser, $data, feof($fp))) {
-        sprintf($this->getInterMsg('xml_error'),
-                xml_error_string(xml_get_error_code($this->parser)),
-                xml_get_current_line_number($this->parser));
+        printf($this->getInterMsg('xml_error'),
+               xml_error_string(xml_get_error_code($this->parser)),
+               xml_get_current_line_number($this->parser));
         return -1;
       }
     }
