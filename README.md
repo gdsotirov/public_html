@@ -1,5 +1,4 @@
-Georgi D. Sotirov's Personal Pages
-------------------------------------------------------------------------------
+# My Personal Pages
 
-About me, blog, CV, projects, contacts, etc.
+A site about me, blog, CV, projects, contacts, etc.
 
