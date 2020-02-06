@@ -401,16 +401,16 @@
     vertical-align: middle !important;
   }
 
-  ul.share-buttons{
+  ul.my-share-buttons{
     list-style: none;
     padding: 0;
   }
 
-  ul.share-buttons li{
+  ul.my-share-buttons li{
     display: inline;
   }
 
-  ul.share-buttons img{
+  ul.my-share-buttons img{
     height: 32px;
     width: 32px;
   }
