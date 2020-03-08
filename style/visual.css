@@ -14,11 +14,11 @@
 }
 
 @media print {
-  abbr[title], acronym[title] {
+  abbr[title] {
     border-bottom: none;
   }
 
-  abbr[title][class=expand]:after, acronym[title][class=expand]:after {
+  abbr[title][class=expand]:after {
     content: " (" attr(title) ")";
   }
 
@@ -47,7 +47,7 @@
 }
 
 @media print, projection, screen, tv {
-  abbr[title], acronym[title] {
+  abbr[title] {
     font-style: normal;
     border-bottom: 1px dotted;
   }

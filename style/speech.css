@@ -32,10 +32,6 @@
     speak-as: spell-out;
   }
 
-  acronym {
-    speak-as: normal;
-  }
-
   b {
     voice-pitch: medium;
     voice-range: medium;
