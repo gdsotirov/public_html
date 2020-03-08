@@ -1,8 +1,8 @@
 /* Georgi D. Sotirov's Personal Home Page Styles
  *
- * Copyright 2004-2018 Georgi D. Sotirov <gdsotirov@dir.bg>
+ * Copyright 2004-2020 Georgi D. Sotirov <gdsotirov@dir.bg>
  *
- * Media      : print, projection, screen, tv
+ * Media      : print, screen
  * Theme      : Default
  * Description: Clear fonts, gray color theme and menu on the left side.
  * TODO       : 1. There is problem in displaying smoe items in IE 5. The
@@ -39,7 +39,7 @@
   }
 }
 
-@media print, projection {
+@media print {
   div#Menu {
     display: none;
   }
@@ -66,7 +66,7 @@
   }
 }
 
-@media print, projection, screen, tv {
+@media print, screen {
   a[href] {
     text-decoration: underline;
   }
@@ -208,7 +208,7 @@
   }
 }
 
-@media projection, screen {
+@media  screen {
   a[href] {
     background-color: inherit;
     color: #00f;
