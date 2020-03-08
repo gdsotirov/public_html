@@ -37,34 +37,36 @@
 
 <body>
 
-<div id="Menu">
+<section id="Menu">
 <h2>Начало</h2>
-<map id="MenuPage" name="MenuPage">
-<p>
-<a accesskey="З" href="#About"><span class="u">З</span>а мен</a>
-<a accesskey="Д" href="#Blog"><span class="u">Д</span>невник</a>
-<a accesskey="А" href="cv/cv" title="Автобиография (нова страница)"><span class="u">А</span>втобиография</a>
-<a accesskey="Л" href="personal" title="Още за мен"><span class="u">Л</span>ично</a>
-<a accesskey="П" href="projects/" title="Проекти (нова страница)"><span class="u">П</span>роекти</a>
-<a accesskey="В" href="#Contacts"><span class="u">В</span>ръзка</a>
-<a accesskey="Г" href="#Propaganda">Пропа<span class="u">г</span>анда</a>
-</p></map>
-<map id="MenuGeneral" name="MenuGeneral">
-<p>
-<a accesskey="Р" href="glossary"><span class="u">Р</span>ечник</a>
-<a accesskey="Т" href="search"><span class="u">Т</span>ърсене</a>
-</p></map>
-<map id="MenuLang" name="MenuLang">
-<p><a accesskey="E" href="index.en" hreflang="en"><span class="u">E</span>nglish</a>
-</p></map>
-</div>
+<nav id="MenuPage">
+<ul>
+<li><a accesskey="З" href="#About"><span class="u">З</span>а мен</a></li>
+<li><a accesskey="Д" href="#Blog"><span class="u">Д</span>невник</a></li>
+<li><a accesskey="А" href="cv/cv" title="Автобиография (нова страница)"><span class="u">А</span>втобиография</a></li>
+<li><a accesskey="Л" href="personal" title="Още за мен"><span class="u">Л</span>ично</a></li>
+<li><a accesskey="П" href="projects/" title="Проекти (нова страница)"><span class="u">П</span>роекти</a></li>
+<li><a accesskey="В" href="#Contacts"><span class="u">В</span>ръзка</a></li>
+<li><a accesskey="Г" href="#Propaganda">Пропа<span class="u">г</span>анда</a></li>
+</ul></nav>
+<nav id="MenuGeneral">
+<ul>
+<li><a accesskey="Р" href="glossary"><span class="u">Р</span>ечник</a></li>
+<li><a accesskey="Т" href="search"><span class="u">Т</span>ърсене</a></li>
+</ul></nav>
+<nav id="MenuLang">
+<ul>
+<li><a accesskey="E" href="index.en" hreflang="en"><span class="u">E</span>nglish</a></li>
+</ul></nav>
+</section>
 
-<div id="Header">
+<header>
 <h1>Лични страници на Георги Сотиров</h1>
-</div>
+</header>
 
-<div id="Content">
-<div id="About">
+<main>
+
+<section id="About">
 <h2 class="no_top_margin">За мен</h2>
 <p class="texti">Добре дошли на личните ми страници. Тук можете да научите
 повече за мен и начините за връзка с мен. Ще намерите някои от личните ми
@@ -82,9 +84,9 @@ href="http://ecatalog.nbu.bg/default.asp?V_Year=2012&amp;PageShow=programpresent
 проекти. Фен съм на <a href="https://www.formula1.com/" hreflang="en">Формула 1</a>
 и <a href="https://www.lemans.org/" hreflang="en">Le Mans</a> и когато мога
 посещавам съзтезания.</p>
-</div>
+</section>
 
-<div id="Blog">
+<section id="Blog">
 <h2>Дневник</h2>
 <p>
 <?php
@@ -96,9 +98,9 @@ href="http://ecatalog.nbu.bg/default.asp?V_Year=2012&amp;PageShow=programpresent
 <p class="align-right">
 <a href="http://gdsotirov-bg.blogspot.com/">Архив</a>&nbsp;|&nbsp;<img alt="Емисия:" src="/icons/feed" title="Емисия" />&nbsp;<a
 href="http://gdsotirov-bg.blogspot.com/feeds/posts/default" type="application/atom+xml">Atom</a></p>
-</div>
+</section>
 
-<div id="Contacts">
+<section id="Contacts">
 <h2>Връзка с мен</h2>
 <p class="text_left">Можете да се свържете с мен по електронна поща, чрез незабавни съобщения или социални мрежи.</p>
 
@@ -129,9 +131,9 @@ href="http://gdsotirov-bg.blogspot.com/feeds/posts/default" type="application/at
   <img alt="Свързване в LinkedIn" src="/img/soc_li" /></a></li>
 </ul>
 
-</div>
+</section>
 
-<div id="Propaganda">
+<section id="Propaganda">
 <h2>Пропаганда</h2>
 <!-- KDE -->
 <p class="text_left">
@@ -161,8 +163,9 @@ alt="Mozilla logo" height="48" src="img/logo_mozilla" title="Mozilla"
 width="133"  /></a></p>
 <p class="text_left">Тези страници са разработени и изпитани в
 <a href="https://www.mozilla.org/bg/" hreflang="bg">Mozilla</a>.</p>
-</div>
-</div>
+</section>
+
+</main>
 
 <footer>
 <hr />

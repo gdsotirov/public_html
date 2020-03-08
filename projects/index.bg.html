@@ -30,43 +30,44 @@
 
 <body>
 
-<div id="Menu">
+<section id="Menu">
 <h2>Проекти</h2>
-<map id="MenuPage" name="MenuPage">
-<p>
-<a accesskey="А" href="#Desktop">Н<span class="u">а</span>столни приложения</a>
-<a accesskey="Л" href="#Libraries">Биб<span class="u">л</span>иотеки</a>
-<a accesskey="W" href="#Web"><span class="u">W</span>eb приложения</a>
-<a accesskey="С" href="#Sites"><span class="u">С</span>айтове</a>
-<a accesskey="Б" href="#Databases"><span class="u">Б</span>ази от данни</a>
-<a accesskey="П" href="#Translations"><span class="u">П</span>реводи</a>
-<a accesskey="К" href="#Packaging">Па<span class="u">к</span>етиране</a>
-</p></map>
-<map id="MenuGeneral" name="MenuGeneral">
-<p>
-<a accesskey="Н" href="../"><span class="u">Н</span>ачало</a>
-<a accesskey="Р" href="../glossary"><span class="u">Р</span>ечник</a>
-<a accesskey="Т" href="../search"><span class="u">Т</span>ърсене</a>
-</p></map>
-<map id="MenuLang" name="MenuLang">
-<p><a accesskey="E" href="index.en" hreflang="en"><span class="u">E</span>nglish</a>
-</p></map>
-</div>
+<nav id="MenuPage">
+<ul>
+<li><a accesskey="А" href="#Desktop">Н<span class="u">а</span>столни приложения</a></li>
+<li><a accesskey="Л" href="#Libraries">Биб<span class="u">л</span>иотеки</a></li>
+<li><a accesskey="W" href="#Web"><span class="u">W</span>eb приложения</a></li>
+<li><a accesskey="С" href="#Sites"><span class="u">С</span>айтове</a></li>
+<li><a accesskey="Б" href="#Databases"><span class="u">Б</span>ази от данни</a></li>
+<li><a accesskey="П" href="#Translations"><span class="u">П</span>реводи</a></li>
+<li><a accesskey="К" href="#Packaging">Па<span class="u">к</span>етиране</a></li>
+</ul></nav>
+<nav id="MenuGeneral">
+<ul>
+<li><a accesskey="Н" href="../"><span class="u">Н</span>ачало</a></li>
+<li><a accesskey="Р" href="../glossary"><span class="u">Р</span>ечник</a></li>
+<li><a accesskey="Т" href="../search"><span class="u">Т</span>ърсене</a></li>
+</ul></nav>
+<nav id="MenuLang">
+<ul>
+<li><a accesskey="E" href="index.en" hreflang="en"><span class="u">E</span>nglish</a></li>
+</ul></nav>
+</section>
 
-<div id="Header">
+<header>
 <h1>Проекти на Георги Сотиров</h1>
-</div>
+</header>
 
-<div id="Content">
+<main>
 
 <p>Тази година ще <a href="http://gdsotirov.blogspot.com/2018/05/migration-to-git-and-github.html">мигрирам</a>
 всичките си лични проекти на <a href="https://github.com/">GitHub</a>.</p>
 
-<div id="Desktop">
+<section id="Desktop">
 <h2>Настолни приложения</h2>
 
 <div id="ProjectDAC" class="proj">
-<div class="proj_dtls">
+<section class="proj_dtls">
 <h3>DAC - Dish Antenna Calculator (Калкулатор на параболични антени)</h3>
 <p class="text">Това е проекта, който написах за илюстрация към дипломната
 работа на брат ми. Приложението изчислява параметрите на VSAT параболична
@@ -80,7 +81,7 @@
 <li>Изтегляне: <a href="http://ftp.sotirov-bg.net/pub/dac/dac-latest.zip"><abbr title="Hypertext Transfer Protocol" lang="en">HTTP</abbr></a>,
                <a href="ftp://sotirov-bg.net/pub/dac/dac-latest.zip"><abbr title="File Transfer Protocol" lang="en">FTP</abbr></a></li>
 </ul>
-</div>
+</section>
 <div class="proj_img">
 <p>Екранни снимки</p>
 <a href="dac-01.png">
@@ -91,7 +92,7 @@
 </div>
 
 <div id="ProjectSiVi" class="proj">
-<div class="proj_dtls">
+<section class="proj_dtls">
 <h3>SiVi - Signal Visualizer (Визуализатор на сигнали)</h3>
 <p class="text">Още един проект, с който помогнах на брат ми. SiVi е
 <abbr lang="en" title="Multiple Document Interface">MDI</abbr> приложение,
@@ -106,7 +107,7 @@
 <li>Изтегляне: <a href="http://ftp.sotirov-bg.net/pub/sivi/sivi-latest.zip"><abbr title="Hypertext Transfer Protocol" lang="en">HTTP</abbr></a>,
                <a href="ftp://sotirov-bg.net/pub/sivi/sivi-latest.zip"><abbr title="File Transfer Protocol" lang="en">FTP</abbr></a></li>
 </ul>
-</div>
+</section>
 <div class="proj_img">
 <p>Екранни снимки</p>
 <a href="sivi_mdi.png">
@@ -118,11 +119,11 @@
 title="Синусоиден с амплитуда 5 и честота 680 Hz" /></a>
 </div>
 </div>
-</div>
+</section>
 
-<div id="Lib" class="clear_both">
+<section id="Lib" class="proj">
 <h2>Библиотеки</h2>
-<div id="ProjectDNetMod">
+<section id="ProjectDNetMod">
 <h3>DNetMod - DeviceNet Модул</h3>
 <p class="text">Моят дипломен проект, който още поддържам. Това e C++
 библиотека използваща C <abbr lang="en" title="Application Programming Interface">API</abbr>
@@ -143,12 +144,12 @@ title="Синусоиден с амплитуда 5 и честота 680 Hz" />
 <li>Среда за разработка: <a href="https://www.kdevelop.org/">KDevelop</a></li>
 <li>Изтегляне: <a href="https://github.com/gdsotirov/dnetmod/releases">GitHub</a></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
-<div id="Web">
+<section id="Web">
 <h2>Web приложения</h2>
-<div id="ProjectICalc">
+<section id="ProjectICalc">
 <h3>Лихвен калкулатор</h3>
 <p class="text">Приложението изчислява лихвата по депозитни сметки за
 определен период, като показва салдото по сметката. То може да изчислява както
@@ -166,9 +167,9 @@ JavaScript, <a href="http://www.w3.org/DOM/"><abbr lang="en" title="Document Obj
                <a href="http://ftp.sotirov-bg.net/pub/icalc/icalc-latest.tar.gz"><abbr title="Hypertext Transfer Protocol" lang="en">HTTP</abbr></a>,
                <a href="ftp://sotirov-bg.net/pub/icalc/icalc-latest.tar.gz"><abbr title="File Transfer Protocol" lang="en">FTP</abbr></a></li>
 </ul>
-</div>
+</section>
 
-<div id="ProjectMCalc">
+<section id="ProjectMCalc">
 <h3>Ипотечен калкулатор</h3>
 <p class="text">С този калкулатор можете да изчислявате както месечната
 анюитетна вноска така и сумата, която можете да получите срещу дадена ипотека.
@@ -186,12 +187,12 @@ JavaScript, <a href="http://www.w3.org/DOM/"><abbr lang="en" title="Document Obj
                <a href="http://ftp.sotirov-bg.net/pub/mcalc/mcalc-latest.tar.gz"><abbr title="Hypertext Transfer Protocol" lang="en">HTTP</abbr></a>,
                <a href="ftp://sotirov-bg.net/pub/mcalc/mcalc-latest.tar.gz"><abbr title="File Transfer Protocol" lang="en">FTP</abbr></a></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
-<div id="Sites">
+<section id="Sites">
 <h2>Сайтове</h2>
-<div id="sotirov-bg.net">
+<section id="sotirov-bg.net">
 <h3>sotirov-bg.net</h3>
 <p class="text">Това е сайта на моя домашен сървър. Главната му цел е да
 информира потребителя за съществуването си и да го насочва към поддържаните
@@ -208,8 +209,8 @@ JavaScript, <a href="http://www.w3.org/DOM/"><abbr lang="en" title="Document Obj
 <a href="http://www.php.net/"><abbr lang="en" title="PHP: Hypertext Preprocesor">PHP</abbr></a>,
 <a href="http://www.perl.com/"><abbr lang="en" title="Practical Extraction and Reporting Tool">Perl</abbr></a></li>
 </ul>
-</div>
-<div id="personal">
+</section>
+<section id="personal">
 <h3>Лични страници</h3>
 <p class="text">Моите лични страници. Съдържат информация за мен и за нещата,
 които правя.</p>
@@ -222,8 +223,8 @@ JavaScript, <a href="http://www.w3.org/DOM/"><abbr lang="en" title="Document Obj
 <a href="http://www.w3.org/Style/CSS/"><abbr lang="en" title="Cascading Style Sheets">CSS</abbr></a>,
 <a href="http://www.php.net/"><abbr lang="en" title="PHP: Hypertext Preprocesor">PHP</abbr></a></li>
 </ul>
-</div>
-<div id="iva12">
+</section>
+<section id="iva12">
 <h3>iva-12.com</h3>
 <p class="text">Сайт на фирма за производство на сладкарски изделия.</p>
 <ul>
@@ -234,12 +235,12 @@ JavaScript, <a href="http://www.w3.org/DOM/"><abbr lang="en" title="Document Obj
 <a href="http://www.w3.org/MarkUp/"><abbr lang="en" title="Extensible HyperText Markup Language">XHTML</abbr></a>,
 <a href="http://www.w3.org/Style/CSS/"><abbr lang="en" title="Cascading Style Sheets">CSS</abbr></a></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
-<div id="Databases">
+<section id="Databases">
 <h2>Бази от данни</h2>
-<div id="hr_schema">
+<section id="hr_schema">
 <h3>HR Schema</h3>
 <p class="text">Примерна база с данни на човешки ресурси за управление на
 организация, служители, и т.н.</p>
@@ -254,9 +255,9 @@ JavaScript, <a href="http://www.w3.org/DOM/"><abbr lang="en" title="Document Obj
 <a hreflang="en" href="https://dev.mysql.com/downloads/mysql/">MySQL</a></li>
 <li>Изтегляне: <a href="https://github.com/gdsotirov/hr_schema/archive/master.zip">ZIP архив</a></li>
 </ul>
-</div>
+</section>
 
-<div id="mysql-play">
+<section id="mysql-play">
 <h3>MySQL Play</h3>
 <p class="text">Моето MySQL игрище включващо примерни схеми, примери за
 нови възможности, опитни заявки, тестови постановки, полезни програми, т.н.</p>
@@ -271,9 +272,9 @@ JavaScript, <a href="http://www.w3.org/DOM/"><abbr lang="en" title="Document Obj
 <a hreflang="en" href="https://dev.mysql.com/downloads/mysql/">MySQL</a></li>
 <li>Изтегляне: <a href="https://github.com/gdsotirov/mysql-play/archive/master.zip">ZIP архив</a></li>
 </ul>
-</div>
+</section>
 
-<div id="lemans24">
+<section id="lemans24">
 <h3>Льо Ман 24</h3>
 <p class="text">Малка схема за статистики по 24 часа на Льо Ман състезанието
 за издръжливост с програма за извличане на резултати от <a href="https://www.wikipedia.org/">Wikipedia</a>.</p>
@@ -289,12 +290,12 @@ JavaScript, <a href="http://www.w3.org/DOM/"><abbr lang="en" title="Document Obj
 <a hreflang="en" href="https://dev.mysql.com/downloads/mysql/">MySQL</a></li>
 <li>Изтегляне: <a href="https://github.com/gdsotirov/lemans24/archive/master.zip">ZIP архив</a></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
-<div id="Translations">
+<section id="Translations">
 <h2>Преводи</h2>
-<div id="BugzillaBG">
+<section id="BugzillaBG">
 <h3>Bugzilla на български</h3>
 <p class="text">Това е <a href="http://www.bugzilla.org/download/#localizations">официалния
 превод</a> на <a href="http://www.bugzilla.org/">Bugzilla</a> на Български, като част от
@@ -312,12 +313,12 @@ JavaScript, <a href="http://www.w3.org/DOM/"><abbr lang="en" title="Document Obj
 <li>Изтегляне: по <a href="http://ftp.sotirov-bg.net/pub/contrib/mozilla/bugzilla/l10n/"><abbr title="Hypertext Transfer Protocol" lang="en">HTTP</abbr></a> и
                   <a href="ftp://sotirov-bg.net/pub/contrib/mozilla/bugzilla/l10n/"><abbr title="File Transfer Protocol" lang="en">FTP</abbr></a></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
-<div id="Packaging">
+<section id="Packaging">
 <h2>Пакетиране</h2>
-<div id="ProjectSlackPack">
+<section id="ProjectSlackPack">
 <h3>Пакети за Slackware</h3>
 <p class="text">Използвам <a hreflang="en" href="http://www.slackware.com/">Slackware</a> Linux
 от 2001-a. От началото на 2005-a започнах да правя пакети за моята машина
@@ -339,9 +340,9 @@ Slackware</a> пакетите ми.</p>
 <a hreflang="en" href="http://www.w3.org/MarkUp/"><abbr lang="en" title="Extensible Markup Language">XML</abbr></a>,
 <a hreflang="en" href="http://www.w3.org/Style/CSS/"><abbr lang="en" title="Cascading Style Sheets">CSS</abbr></a></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</main>
 
 <footer>
 <hr />

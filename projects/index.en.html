@@ -30,43 +30,44 @@
 
 <body>
 
-<div id="Menu">
+<section id="Menu">
 <h2>Projects</h2>
-<map id="MenuPage" name="MenuPage">
-<p>
-<a accesskey="D" href="#Desktop"><span class="u">D</span>esktop applications</a>
-<a accesskey="L" href="#Libraries"><span class="u">L</span>ibraries</a>
-<a accesskey="W" href="#Web"><span class="u">W</span>eb applications</a>
-<a accesskey="S" href="#Sites"><span class="u">S</span>ites</a>
-<a accesskey="B" href="#Databases">Data<span class="u">b</span>ases</a>
-<a accesskey="T" href="#Translations"><span class="u">T</span>ranslations</a>
-<a accesskey="P" href="#Packaging"><span class="u">P</span>ackaging</a>
-</p></map>
-<map id="MenuGeneral" name="MenuGeneral">
-<p>
-<a accesskey="H" href="../"><span class="u">H</span>ome</a>
-<a accesskey="G" href="../glossary"><span class="u">G</span>lossary</a>
-<a accesskey="S" href="../search"><span class="u">S</span>earch</a>
-</p></map>
-<map id="MenuLang" name="MenuLang">
-<p><a accesskey="Б" href="index.bg" hreflang="bg"><span class="u">Б</span>ългарски</a>
-</p></map>
-</div>
+<nav id="MenuPage">
+<ul>
+<li><a accesskey="D" href="#Desktop"><span class="u">D</span>esktop applications</a></li>
+<li><a accesskey="L" href="#Libraries"><span class="u">L</span>ibraries</a></li>
+<li><a accesskey="W" href="#Web"><span class="u">W</span>eb applications</a></li>
+<li><a accesskey="S" href="#Sites"><span class="u">S</span>ites</a></li>
+<li><a accesskey="B" href="#Databases">Data<span class="u">b</span>ases</a></li>
+<li><a accesskey="T" href="#Translations"><span class="u">T</span>ranslations</a></li>
+<li><a accesskey="P" href="#Packaging"><span class="u">P</span>ackaging</a></li>
+</ul></nav>
+<nav id="MenuGeneral">
+<ul>
+<li><a accesskey="H" href="../"><span class="u">H</span>ome</a></li>
+<li><a accesskey="G" href="../glossary"><span class="u">G</span>lossary</a></li>
+<li><a accesskey="S" href="../search"><span class="u">S</span>earch</a></li>
+</ul></nav>
+<nav id="MenuLang">
+<ul>
+<li><a accesskey="Б" href="index.bg" hreflang="bg"><span class="u">Б</span>ългарски</a></li>
+</ul></nav>
+</section>
 
-<div id="Header">
+<header>
 <h1>Georgi Sotirov's Projects</h1>
-</div>
+</header>
 
-<div id="Content">
+<main>
 
 <p>This year I'll be <a href="http://gdsotirov.blogspot.com/2018/05/migration-to-git-and-github.html">migrating</a>
 all my personal projects to <a href="https://github.com/">GitHub</a>.</p>
 
-<div id="Desktop">
+<section id="Desktop">
 <h2>Desktop Applications</h2>
 
 <div id="ProjectDAC" class="proj">
-<div class="proj_dtls">
+<section class="proj_dtls">
 <h3>DAC - Dish Antenna Calculator</h3>
 <p class="text">This is the project that I wrote to illustrate my brother's
 diploma thesis. The application calculates the parameters of a VSAT dish antenna
@@ -80,7 +81,7 @@ and shows some nice graphics and schemes.</p>
 <li>Download: <a href="http://ftp.sotirov-bg.net/pub/dac/dac-latest.zip"><abbr title="Hypertext Transfer Protocol">HTTP</abbr></a>,
               <a href="ftp://sotirov-bg.net/pub/dac/dac-latest.zip"><abbr title="File Transfer Protocol">FTP</abbr></a></li>
 </ul>
-</div>
+</section>
 <div class="proj_img">
 <p>Screenshots</p>
 <a href="dac-01.png">
@@ -91,7 +92,7 @@ and shows some nice graphics and schemes.</p>
 </div>
 
 <div id="ProjectSiVi" class="proj">
-<div class="proj_dtls">
+<section class="proj_dtls">
 <h3>SiVi - Signal Visualizer</h3>
 <p class="text">Another project with which I helped my brother. SiVi is an
 <abbr title="Multiple Document Interface">MDI</abbr> application
@@ -106,7 +107,7 @@ with different amplitude and frequency.</p>
 <li>Download: <a href="http://ftp.sotirov-bg.net/pub/sivi/sivi-latest.zip"><abbr title="Hypertext Transfer Protocol" lang="en">HTTP</abbr></a>,
               <a href="ftp://sotirov-bg.net/pub/sivi/sivi-latest.zip"><abbr title="File Transfer Protocol" lang="en">FTP</abbr></a></li>
 </ul>
-</div>
+</section>
 <div class="proj_img">
 <p>Screenshots</p>
 <a href="sivi_mdi.png">
@@ -118,11 +119,11 @@ with different amplitude and frequency.</p>
 title="Sinosuidal with amplitued 5 and frequency 680 Hz" /></a>
 </div>
 </div>
-</div>
+</section>
 
-<div id="Lib" class="clear_both">
+<section id="Lib" class="proj">
 <h2>Libraries</h2>
-<div id="ProjectDNetMod">
+<section id="ProjectDNetMod">
 <h3>DNetMod - DeviceNet Module</h3>
 <p class="text">My diploma project that I continue supporting. It's a C++
 library using the C <abbr title="Application Programming Interface">API</abbr>
@@ -143,12 +144,12 @@ network.</p>
 <li>Development environment: <a href="https://www.kdevelop.org/">KDevelop</a></li>
 <li>Download: <a href="https://github.com/gdsotirov/dnetmod/releases">GitHub</a></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
-<div id="Web">
+<section id="Web">
 <h2>Web Applications</h2>
-<div id="ProjectICalc">
+<section id="ProjectICalc">
 <h3>Interest Calculator</h3>
 <p class="text">The application calculates the interest on deposit accounts
 for a given period and shows the account balance. It can calculate both simple
@@ -166,9 +167,9 @@ JavaScript, <a href="http://www.w3.org/DOM/"><abbr title="Document Object Model"
               <a href="http://ftp.sotirov-bg.net/pub/icalc/icalc-latest.tar.gz"><abbr title="Hypertext Transfer Protocol">HTTP</abbr></a>,
               <a href="ftp://sotirov-bg.net/pub/icalc/icalc-latest.tar.gz"><abbr title="File Transfer Protocol">FTP</abbr></a></li>
 </ul>
-</div>
+</section>
 
-<div id="ProjectMCalc">
+<section id="ProjectMCalc">
 <h3>Mortgage Calculator</h3>
 <p class="text">With this calculator you can calculate both monthly annuity
 payment and the amount you can get for a given mortgage. It also can show
@@ -186,12 +187,12 @@ JavaScript, <a href="http://www.w3.org/DOM/"><abbr title="Document Object Model"
               <a href="http://ftp.sotirov-bg.net/pub/mcalc/mcalc-latest.tar.gz"><abbr title="Hypertext Transfer Protocol">HTTP</abbr></a>,
               <a href="ftp://sotirov-bg.net/pub/mcalc/mcalc-latest.tar.gz"><abbr title="File Transfer Protocol">FTP</abbr></a></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
-<div id="Sites">
+<section id="Sites">
 <h2>Sites</h2>
-<div id="sotirov-bg.net">
+<section id="sotirov-bg.net">
 <h3>sotirov-bg.net</h3>
 <p class="text">This is the site of my home server. Its main purpose is to
 inform the user of his existence and to direct the user to the hosted
@@ -208,8 +209,8 @@ machine and statistical info about the used resources.</p>
 <a href="http://www.php.net/"><abbr title="PHP: Hypertext Preprocesor">PHP</abbr></a>,
 <a href="http://www.perl.com/"><abbr title="Practical Extraction and Reporting Tool">Perl</abbr></a></li>
 </ul>
-</div>
-<div id="personal">
+</section>
+<section id="personal">
 <h3>Personal pages</h3>
 <p class="text">Mine personal pages. Contains information about me and the
 things I do.</p>
@@ -222,8 +223,8 @@ things I do.</p>
 <a href="http://www.w3.org/Style/CSS/"><abbr title="Cascading Style Sheets">CSS</abbr></a>,
 <a href="http://www.php.net/"><abbr title="PHP: Hypertext Preprocesor">PHP</abbr></a></li>
 </ul>
-</div>
-<div id="iva12">
+</section>
+<section id="iva12">
 <h3>iva-12.com</h3>
 <p class="text">The site of a firm for production of confectionery.</p>
 <ul>
@@ -234,12 +235,12 @@ things I do.</p>
 <a href="http://www.w3.org/MarkUp/"><abbr title="Extensible HyperText Markup Language">XHTML</abbr></a>,
 <a href="http://www.w3.org/Style/CSS/"><abbr title="Cascading Style Sheets">CSS</abbr></a></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
-<div id="Databases">
+<section id="Databases">
 <h2>Databases</h2>
-<div id="hr_schema">
+<section id="hr_schema">
 <h3>HR Schema</h3>
 <p class="text">An example HR database for management of company's organization,
 employees, etc.</p>
@@ -254,9 +255,9 @@ employees, etc.</p>
 <a href="https://dev.mysql.com/downloads/mysql/">MySQL</a></li>
 <li>Download: <a href="https://github.com/gdsotirov/hr_schema/archive/master.zip">ZIP archive</a></li>
 </ul>
-</div>
+</section>
 
-<div id="mysql-play">
+<section id="mysql-play">
 <h3>MySQL Play</h3>
 <p class="text">My MySQL playground including example schemas, examples of
 new features, experimental queries, test cases, utility routines, etc.</p>
@@ -271,9 +272,9 @@ new features, experimental queries, test cases, utility routines, etc.</p>
 <a href="https://dev.mysql.com/downloads/mysql/">MySQL</a></li>
 <li>Download: <a href="https://github.com/gdsotirov/mysql-play/archive/master.zip">ZIP archive</a></li>
 </ul>
-</div>
+</section>
 
-<div id="lemans24">
+<section id="lemans24">
 <h3>Le Mans 24</h3>
 <p class="text">A small schema for statistics on 24 Hours of Le Mans endurance
 race with extractor for results from <a href="https://www.wikipedia.org/">Wikipedia</a>.</p>
@@ -289,12 +290,12 @@ race with extractor for results from <a href="https://www.wikipedia.org/">Wikipe
 <a href="https://dev.mysql.com/downloads/mysql/">MySQL</a></li>
 <li>Download: <a href="https://github.com/gdsotirov/lemans24/archive/master.zip">ZIP archive</a></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
-<div id="Translations">
+<section id="Translations">
 <h2>Translations</h2>
-<div id="BugzillaBG">
+<section id="BugzillaBG">
 <h3>Bugzilla in Bulgarian</h3>
 <p class="text">This is <a href="http://www.bugzilla.org/download/#localizations">the official
 translation</a> of <a href="http://www.bugzilla.org/">Bugzilla</a> in Bulgarian as part of
@@ -312,12 +313,12 @@ that targets quality translation and localization of the
 <li>Download: by <a href="http://ftp.sotirov-bg.net/pub/contrib/mozilla/bugzilla/l10n/"><abbr title="Hypertext Transfer Protocol">HTTP</abbr></a> and
                  <a href="ftp://sotirov-bg.net/pub/contrib/mozilla/bugzilla/l10n/"><abbr title="File Transfer Protocol">FTP</abbr></a></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
-<div id="Packaging">
+<section id="Packaging">
 <h2>Packaging</h2>
-<div id="ProjectSlackPack">
+<section id="ProjectSlackPack">
 <h3>Slackware packages</h3>
 <p class="text">I use <a href="http://www.slackware.com/">Slackware</a> Linux
 since 2001. From the beginning of 2005 I've start building packages for my
@@ -339,9 +340,9 @@ Slackware</a> packages.</p>
 <a href="http://www.w3.org/MarkUp/"><abbr title="Extensible Markup Language">XML</abbr></a>,
 <a href="http://www.w3.org/Style/CSS/"><abbr title="Cascading Style Sheets">CSS</abbr></a></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</main>
 
 <footer>
 <hr />

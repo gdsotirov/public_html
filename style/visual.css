@@ -44,9 +44,7 @@
   .hide_print_screen {
     display: none;
   }
-}
 
-@media print, screen {
   abbr[title] {
     font-style: normal;
     border-bottom: 1px dotted;
@@ -60,7 +58,7 @@
   dd, dl, dt,
   form, fieldset,
   h1, h2, h3, h4, h5, h6,
-  hr, html, map, option, optgroup, p, pre,
+  hr, html, nav, option, optgroup, p, pre,
   ul, ol {
     display: block;
   }
@@ -295,12 +293,3 @@
   }
 }
 
-@media tv {
-  body, html {
-    font-size: 1.2em;
-  }
-
-  .hide_tv {
-    display: none;
-  }
-}

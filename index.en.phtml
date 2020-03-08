@@ -37,34 +37,36 @@
 
 <body>
 
-<div id="Menu">
+<section id="Menu">
 <h2>Home</h2>
-<map id="MenuPage" name="MenuPage">
-<p>
-<a accesskey="A" href="#About"><span class="u">A</span>bout me</a>
-<a accesskey="B" href="#Blog"><span class="u">B</span>log</a>
-<a accesskey="V" href="cv/cv" title="CV (new page)">C<span class="u">V</span></a>
-<a accesskey="P" href="personal" title="More about me"><span class="u">P</span>ersonal</a>
-<a accesskey="J" href="projects/" title="Projects (new page)">Pro<span class="u">j</span>ects</a>
-<a accesskey="C" href="#Contacts"><span class="u">C</span>ontacts</a>
-<a accesskey="R" href="#Propaganda">P<span class="u">r</span>opaganda</a>
-</p></map>
-<map id="MenuGeneral" name="MenuGeneral">
-<p>
-<a accesskey="G" href="glossary"><span class="u">G</span>lossary</a>
-<a accesskey="S" href="search"><span class="u">S</span>earch</a>
-</p></map>
-<map id="MenuLang" name="MenuLang">
-<p><a accesskey="Б" href="index.bg" hreflang="bg"><span class="u">Б</span>ългарски</a>
-</p></map>
-</div>
+<nav id="MenuPage">
+<ul>
+<li><a accesskey="A" href="#About"><span class="u">A</span>bout me</a></li>
+<li><a accesskey="B" href="#Blog"><span class="u">B</span>log</a></li>
+<li><a accesskey="V" href="cv/cv" title="CV (new page)">C<span class="u">V</span></a></li>
+<li><a accesskey="P" href="personal" title="More about me"><span class="u">P</span>ersonal</a></li>
+<li><a accesskey="J" href="projects/" title="Projects (new page)">Pro<span class="u">j</span>ects</a></li>
+<li><a accesskey="C" href="#Contacts"><span class="u">C</span>ontacts</a></li>
+<li><a accesskey="R" href="#Propaganda">P<span class="u">r</span>opaganda</a></li>
+</ul></nav>
+<nav id="MenuGeneral">
+<ul>
+<li><a accesskey="G" href="glossary"><span class="u">G</span>lossary</a></li>
+<li><a accesskey="S" href="search"><span class="u">S</span>earch</a></li>
+</ul></nav>
+<nav id="MenuLang">
+<ul>
+<li><a accesskey="Б" href="index.bg" hreflang="bg"><span class="u">Б</span>ългарски</a></li>
+</ul></nav>
+</section>
 
-<div id="Header">
+<header>
 <h1>Georgi Sotirov's Personal Pages</h1>
-</div>
+</header>
 
-<div id="Content">
-<div id="About">
+<main>
+
+<section id="About">
 <h2 class="no_top_margin">About me</h2>
 <p class="texti">Welcome to my personal pages. Here you can learn
 more about me and the ways to contact me. You'll find some of my personal
@@ -82,9 +84,9 @@ swimming and biking. In my spare time I participate in open projects.
 I'm fan of <a href="https://www.formula1.com/">Formula 1</a>
 and <a href="https://www.lemans.org/">Le Mans</a> and when I can
 I'm visting races.</p>
-</div>
+</section>
 
-<div id="Blog">
+<section id="Blog">
 <h2>Blog</h2>
 <p>
 <?php
@@ -96,9 +98,9 @@ I'm visting races.</p>
 <p class="align-right">
 <a href="http://gdsotirov.blogspot.com/">Archive</a>&nbsp;|&nbsp;<img alt="Feed:" src="/icons/feed" title="Feed" />&nbsp;<a
 href="http://gdsotirov.blogspot.com/feeds/posts/default" type="application/atom+xml">Atom</a></p>
-</div>
+</section>
 
-<div id="Contacts">
+<section id="Contacts">
 <h2>Contacts</h2>
 <p class="text_left">You can contact my by</p>
 
@@ -129,9 +131,9 @@ href="http://gdsotirov.blogspot.com/feeds/posts/default" type="application/atom+
   <img alt="Connect in LinkedIn" src="/img/soc_li" /></a></li>
 </ul>
 
-</div>
+</section>
 
-<div id="Propaganda">
+<section id="Propaganda">
 <h2>Propaganda</h2>
 <!-- KDE -->
 <p class="text_left">
@@ -161,8 +163,9 @@ alt="Mozilla logo" height="48" src="img/logo_mozilla" title="Mozilla"
 width="133"  /></a></p>
 <p class="text_left">This site is developed and tested with
 <a class="text" href="https://www.mozilla.org/en-US/">Mozilla</a>.</p>
-</div>
-</div>
+</section>
+
+</main>
 
 <footer>
 <hr />

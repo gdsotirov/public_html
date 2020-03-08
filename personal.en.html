@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="bg">
+<html lang="en">
 
 <head>
 <!-- Meta -->
@@ -32,29 +32,31 @@
 
 <body>
 
-<div id="Menu">
+<section id="Menu">
 <h2>Personal</h2>
-<map id="MenuPage" name="MenuPage">
-<p>
-<a accesskey="k" href="#PublicKey"><span class="u">K</span>ey</a>
-<a accesskey="g" href="#GeekCode"><span class="u">G</span>eek Code</a>
-<a accesskey="c" href="#Countries"><span class="u">C</span>ountries</a>
-</p></map>
-<map id="MenuGeneral" name="MenuGeneral">
-<p>
-<a accesskey="h" href="index"><span class="u">H</span>ome</a>
-<a accesskey="s" href="search"><span class="u">S</span>earch</a></p></map>
-<map id="MenuLang" name="MenuLang">
-<p><a accesskey="б" href="personal.bg.html" hreflang="bg"><span class="u">Б</span>ългарски</a>
-</p></map>
-</div>
+<nav id="MenuPage">
+<ul>
+<li><a accesskey="k" href="#PublicKey"><span class="u">K</span>ey</a></li>
+<li><a accesskey="g" href="#GeekCode"><span class="u">G</span>eek Code</a></li>
+<li><a accesskey="c" href="#Countries"><span class="u">C</span>ountries</a></li>
+</ul></nav>
+<nav id="MenuGeneral">
+<ul>
+<li><a accesskey="h" href="index"><span class="u">H</span>ome</a></li>
+<li><a accesskey="s" href="search"><span class="u">S</span>earch</a></li>
+</ul></nav>
+<nav id="MenuLang">
+<ul>
+<li><a accesskey="б" href="personal.bg.html" hreflang="bg"><span class="u">Б</span>ългарски</a></li>
+</ul></nav>
+</section>
 
-<div id="Header">
+<header>
 <h1>More about me</h1>
-</div>
+</header>
 
-<div id="Content">
-<div id="PublicKey">
+<main>
+<section id="PublicKey">
 <h2>My public key</h2>
 <p class="text">This is the public key with which I sign all the things I made.
 It can also be used for personal correspondence.</p>
@@ -87,9 +89,9 @@ gkQtfpYq41S3BSVprJxzsxxANvtwv0aAJwT3NfkO+TrBXywGSmiPFY/jhKbMhw0T
 XBHd+ACfWLJkGf09KgNMIAbORNLiOjhLH8MAniy3i3/ZUVNZNLTPZf4VWPMmoZEJ
 =Vu+0
 -----END PGP PUBLIC KEY BLOCK-----</code></pre>
-</div>
+</section>
 
-<div id="GeekCode">
+<section id="GeekCode">
 <h2 class="no_top_margin">Geek Code</h2>
 <p class="text">To understand the following code visit
 <a href="https://en.wikipedia.org/wiki/Geek_Code" hreflang="en">Geek Code</a>. You can
@@ -100,9 +102,9 @@ Version: 3.1
 GCS d-@ s: a- C++++$ UL+++>$ P++>$ L+++>$ !E- W+++>$ N+ o+ K-? w++$ !O !M
 !V PS++@ PE++@ !Y PGP++ t 5+ X+@ R tv+@ b+ !DI D+ G++ e++ h r+++ y+++
 ------END GEEK CODE BLOCK------</code></pre>
-</div>
+</section>
 
-<div id="Countries">
+<section id="Countries">
 <h2>Countries I have visited</h2>
 <p class="text">Well, they are not much (just 15 out of <a href="http://www.un.org/en/sections/member-states/growth-united-nations-membership-1945-present/index.html">the
 193 current</a>&nbsp;<a href="http://www.un.org/en/"><abbr title="United Nations">UN</abbr></a>
@@ -139,8 +141,8 @@ selectedColor : "#cc3300",outlineColor : "#666666",rollOverColor : "#ff9999",
 rollOverOutlineColor : "#000000"}
 });
 </script>
-</div>
-</div>
+</section>
+</main>
 
 <footer>
 <hr />

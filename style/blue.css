@@ -35,10 +35,8 @@
   table.CV col:first-child {
     width: 40%;
   }
-}
 
-@media print {
-  div#Menu {
+  section#Menu {
     display: none;
   }
 }
@@ -62,9 +60,7 @@
     font-size: 1em;
     margin-left: 1em;
   }
-}
 
-@media print, screen {
   a[href] {
     text-decoration: underline;
   }
@@ -199,7 +195,7 @@
     margin-right: auto;
   }
 
-  .clear_both {
+  .proj {
     clear: both;
   }
 
@@ -241,7 +237,7 @@
     clear: both;
   }
 
-  div#Content ul {
+  main ul {
     margin: 1em;
     padding-left: 4em;
   }
@@ -289,6 +285,14 @@
     color: inherit;
   }
 
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
   p.copyright a {
     background-color: inherit;
     color: #aaf;
@@ -323,20 +327,19 @@
 }
 
 @media screen {
-  body > div#Menu {
+  body > section#Menu {
     position: fixed;
   }
 
-  div#Header {
+  header {
     margin-left: 12em;
   }
 
-  div#Menu {
+  section#Menu {
     background-color: #eee;
     border-right: 1px dashed #aaa;
     color: inherit;
     margin-right: 1em;
-    position: absolute;
     height: auto;
     width: 12em;
     top: 0;
@@ -345,7 +348,7 @@
     left: 0;
   }
 
-  div#Menu a {
+  section#Menu a {
     background-color: inherit;
     color: #000;
     display: block;
@@ -354,12 +357,12 @@
     text-decoration: none;
   }
 
-  div#Menu a:active, div#Menu a:focus, div#Menu a:hover {
+  section#Menu a:active, section#Menu a:focus, section#Menu a:hover {
     background-color: #9df;
     color: #000;
   }
 
-  div#Menu h2 {
+  section#Menu h2 {
     background-color: #9df;
     border: none;
     color: inherit;
@@ -367,7 +370,7 @@
     padding: 0 0 0 1em;
   }
 
-  div#Content, footer {
+  main, footer {
     margin-left: 12em;
     padding-left: 1em;
   }

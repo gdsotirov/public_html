@@ -32,29 +32,32 @@
 
 <body>
 
-<div id="Menu">
+<section id="Menu">
 <h2>Лично</h2>
-<map id="MenuPage" name="MenuPage">
-<p>
-<a accesskey="к" href="#PublicKey"><span class="u">К</span>люч</a>
-<a accesskey="г" href="#GeekCode"><span class="u">Г</span>ийк Код</a>
-<a accesskey="д" href="#Countries"><span class="u">Д</span>ържави</a>
-</p></map>
-<map id="MenuGeneral" name="MenuGeneral">
-<p>
-<a accesskey="а" href="index">Н<span class="u">а</span>чало</a>
-<a accesskey="р" href="search">Тъ<span class="u">р</span>сене</a></p></map>
-<map id="MenuLang" name="MenuLang">
-<p><a accesskey="n" href="personal.en.html" hreflang="en">E<span class="u">n</span>glish</a>
-</p></map>
-</div>
+<nav id="MenuPage">
+<ul>
+<li><a accesskey="к" href="#PublicKey"><span class="u">К</span>люч</a></li>
+<li><a accesskey="г" href="#GeekCode"><span class="u">Г</span>ийк Код</a></li>
+<li><a accesskey="д" href="#Countries"><span class="u">Д</span>ържави</a></li>
+</ul></nav>
+<nav id="MenuGeneral">
+<ul>
+<li><a accesskey="а" href="index">Н<span class="u">а</span>чало</a></li>
+<li><a accesskey="р" href="search">Тъ<span class="u">р</span>сене</a></li>
+</ul></nav>
+<nav id="MenuLang">
+<ul>
+<li><a accesskey="n" href="personal.en.html" hreflang="en">E<span class="u">n</span>glish</a></li>
+</ul></nav>
+</section>
 
-<div id="Header">
+<header>
 <h1>Повече за мен</h1>
-</div>
+</header>
 
-<div id="Content">
-<div id="PublicKey">
+<main>
+
+<section id="PublicKey">
 <h2>Моят публичен ключ</h2>
 <p class="text">Това е публичния ключ, с който подписвам нещата които правя.
 Също така може да се използва за лична кореспонденция.</p>
@@ -87,9 +90,9 @@ gkQtfpYq41S3BSVprJxzsxxANvtwv0aAJwT3NfkO+TrBXywGSmiPFY/jhKbMhw0T
 XBHd+ACfWLJkGf09KgNMIAbORNLiOjhLH8MAniy3i3/ZUVNZNLTPZf4VWPMmoZEJ
 =Vu+0
 -----END PGP PUBLIC KEY BLOCK-----</code></pre>
-</div>
+</section>
 
-<div id="GeekCode">
+<section id="GeekCode">
 <h2 class="no_top_margin">Гийк Код</h2>
 <p class="text">За да разберете следващия код посетете
 <a href="https://en.wikipedia.org/wiki/Geek_Code" hreflang="en">Geek Code</a>. Можете и да го
@@ -100,9 +103,9 @@ Version: 3.1
 GCS d-@ s: a- C++++$ UL+++>$ P++>$ L+++>$ !E- W+++>$ N+ o+ K-? w++$ !O !M
 !V PS++@ PE++@ !Y PGP++ t 5+ X+@ R tv+@ b+ !DI D+ G++ e++ h r+++ y+++
 ------END GEEK CODE BLOCK------</code></pre>
-</div>
+</section>
 
-<div id="Countries">
+<section id="Countries">
 <h2>Държави, които съм посетил</h2>
 <p class="text">Е, не са много (само 15 от <a hreflang="en" href="http://www.un.org/en/sections/member-states/growth-united-nations-membership-1945-present/index.html">настоящите
 193</a>&nbsp;<a hreflang="en" href="http://www.un.org/en/"><abbr title="Организация на обединените нации">ООН</abbr></a>
@@ -139,8 +142,9 @@ selectedColor : "#cc3300",outlineColor : "#666666",rollOverColor : "#ff9999",
 rollOverOutlineColor : "#000000"}
 });
 </script>
-</div>
-</div>
+</section>
+
+</main>
 
 <footer>
 <hr />
