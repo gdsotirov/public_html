@@ -17,7 +17,7 @@
     color: inherit;
   }
 
-  div#Footer, div#Alphabet, form#ICQMsgForm {
+  footer, div#Alphabet, form#ICQMsgForm {
     display: none;
   }
 
@@ -386,7 +386,7 @@
     padding: 0.1em 0 0.1em 1em;
   }
 
-  div#Footer {
+  footer {
     clear: both;
   }
 
