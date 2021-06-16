@@ -110,6 +110,25 @@
     display: table-column-group;
   }
 
+  div#mapdiv {
+    height: 360px;
+    width: 640px;
+  }
+
+  div#mapref {
+    background-color: #000066;
+    color: #B4B4B7;
+    font-size: 70%;
+    margin-top: 1px;
+    padding: 5px 0;
+    text-align: center;
+    width: 640px;
+  }
+
+  div#mapref a {
+    color: #B4B4B7;
+  }
+
   dl dl, dl ol, dl ul,
   ol dl, ol ol, ol ul,
   ul dl, ul ol, ul ul {

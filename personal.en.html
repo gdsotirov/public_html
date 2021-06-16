@@ -56,6 +56,7 @@
 </header>
 
 <main>
+
 <section id="PublicKey">
 <h2>My public key</h2>
 <p class="text">This is the public key with which I sign all the things I made.
@@ -110,11 +111,10 @@ GCS d-@ s: a- C++++$ UL+++>$ P++>$ L+++>$ !E- W+++>$ N+ o+ K-? w++$ !O !M
 193 current</a>&nbsp;<a href="https://www.un.org/en/"><abbr title="United Nations">UN</abbr></a>
 <a href="https://www.un.org/en/member-states/">members</a> or 7.77%), but I like the graphic. I hope to fill it up the map in
 future, so I have to travel more :-)</p>
-<div id="mapdiv" style="width: 640px; height: 360px;"></div>
-<div style="width: 640px; font-size: 70%; padding: 5px 0; text-align: center; background-color: #000066; margin-top: 1px; color: #B4B4B7;">
-<a href="https://www.amcharts.com/visited_countries/" style="color: #B4B4B7;">Create
-your own visited countries map</a> or check out the <a href="https://www.amcharts.com/"
-style="color: #B4B4B7;">JavaScript Charts</a>.</div>
+<div id="mapdiv"></div>
+<div id="mapref"><a href="https://www.amcharts.com/visited_countries/">Create
+your own visited countries map</a> or check out the <a
+href="https://www.amcharts.com/">JavaScript Charts</a>.</div>
 <script>
 var map = AmCharts.makeChart("mapdiv",{type: "map",theme: "dark",projection: "miller",
 panEventsEnabled : true,backgroundColor : "#000066",backgroundAlpha : 1,
@@ -142,6 +142,7 @@ rollOverOutlineColor : "#000000"}
 });
 </script>
 </section>
+
 </main>
 
 <footer>
