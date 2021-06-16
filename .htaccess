@@ -9,6 +9,6 @@ default-src 'self'; \
 object-src 'none'; \
 report-uri /csp_report.php; \
 require-trusted-types-for 'script'; \
-script-src 'report-sample' 'self' https://www.amcharts.com https://secure.skypeassets.com"
+script-src 'report-sample' 'self' https://www.amcharts.com"
 </IfModule>
 
