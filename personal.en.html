@@ -25,9 +25,11 @@
 <link rel="top" href="index" title="Home" />
 <link rel="up" href="glossary" title="Up" />
 <link rel="alternate" type="text/html" href="personal.bg.html" hreflang="bg" lang="bg" title="Лично" />
+<!-- Scripts -->
 <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
 <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"></script>
 <script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
+<script src="js/map.js"></script>
 </head>
 
 <body>
@@ -115,32 +117,6 @@ future, so I have to travel more :-)</p>
 <div id="mapref"><a href="https://www.amcharts.com/visited_countries/">Create
 your own visited countries map</a> or check out the <a
 href="https://www.amcharts.com/">JavaScript Charts</a>.</div>
-<script>
-var map = AmCharts.makeChart("mapdiv",{type: "map",theme: "dark",projection: "miller",
-panEventsEnabled : true,backgroundColor : "#000066",backgroundAlpha : 1,
-zoomControl: {zoomControlEnabled : true},
-dataProvider : {map : "worldHigh",getAreasFromMap : true,
-areas :[{"id": "AT","showAsSelected": true},
-        {"id": "BE","showAsSelected": true},
-        {"id": "BG","showAsSelected": true},
-        {"id": "DE","showAsSelected": true},
-        {"id": "FR","showAsSelected": true},
-        {"id": "GR","showAsSelected": true},
-        {"id": "HU","showAsSelected": true},
-        {"id": "IT","showAsSelected": true},
-        {"id": "MK","showAsSelected": true},
-        {"id": "NL","showAsSelected": true},
-        {"id": "PT","showAsSelected": true},
-        {"id": "RO","showAsSelected": true},
-        {"id": "RS","showAsSelected": true},
-        {"id": "ES","showAsSelected": true},
-        {"id": "TR","showAsSelected": true}]
-},
-areasSettings : {autoZoom : true,color : "#B4B4B7",colorSolid : "#cc3300",
-selectedColor : "#cc3300",outlineColor : "#666666",rollOverColor : "#ff9999",
-rollOverOutlineColor : "#000000"}
-});
-</script>
 </section>
 
 </main>
