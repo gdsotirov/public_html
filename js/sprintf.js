@@ -1,11 +1,14 @@
-<!--
-/* Author: Jan Moesen (jan.moesen.nu)
- * URL: https://jan.moesen.nu/code/javascript/sprintf-and-printf-in-javascript/
+/**
+ * @file Implements a C like sprintf function
+ * @author Jan Moesen (jan.moesen.nu)
+ * @see https://jan.moesen.nu/code/javascript/sprintf-and-printf-in-javascript/
  * Modified by: Georgi D. Sotirov, gdsotirov@gmail.com
  */
 
-/* Function   : sprintf
- * Description: C like sprintf function.
+/**
+ * C like sprintf function
+ * @param {string} format String with formatting directives
+ * @returns String with formatting directives replaced
  */
 function sprintf(format) {
   if ( arguments.length < 1 )
@@ -59,4 +62,4 @@ function sprintf(format) {
   }
   return str;
 }
-//-->
+

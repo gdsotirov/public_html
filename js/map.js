@@ -1,6 +1,7 @@
 /**
  * @file Generate visited countries map
  * @author Georgi D. Sotirov <gdsotirov@gmail.com>
+ * @license GPL-2.0-only
  */
 
 var map = AmCharts.makeChart("mapdiv",{type: "map",theme: "dark",projection: "miller",

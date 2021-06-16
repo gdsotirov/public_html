@@ -1,7 +1,7 @@
-/* Georgi Dimitrov Sotirov's Personal Home Page
- * Written by Georgi D. Sotirov, gdsotirov@gmail.com
- *
- * Scripting
+/**
+ * @file Personal Home Page scripts
+ * @author Georgi D. Sotirov <gdsotirov@gmail.com>
+ * @license GPL-2.0-only
  */
 
 /* String IDs */
@@ -18,11 +18,13 @@ var strEN = new Array(
  /*  0 */ "Please, fill in the message body!",
  /*  1 */ "Problems with your page in user agent '%s'!");
 
-//var strLangId = new Array("bg", "en");
+/* Language translation array */
 var strLang = new Array(strBG, strEN);
 
-/* Function   : getLangId
- * Description: Retrieve language id based on language i18n name.
+/**
+ * Retrieve language id based on language i18n name
+ * @param {string} langStr Language code (e.g. bg or en)
+ * @returns Index in the language translation array
  */
 function getLangId(langStr) {
   switch (langStr) {
@@ -32,10 +34,11 @@ function getLangId(langStr) {
   }
 }
 
-/* Function   : translateString
- * Description: This function helps multilingual support.
+/**
+ * Translates a string in different languages.
  * Conformance: DOM L1, ECMAScript
- * Return val.: Requested string in the corresponding page language.
+ * @param {number} strId Identifier of the string to translate
+ * @returns Requested string in the corresponding page language
  */
 function translateString(strId) {
   var htmltags = document.getElementsByTagName("html");
@@ -46,10 +49,10 @@ function translateString(strId) {
   return strLang[langId][strId];
 }
 
-/* Function   : checkMsgBody
- * Description: Check the body of the ICQ message and alert the user if it's
- *              not filled.
+/**
+ * Check the body of the ICQ message and alert the user if it's empty.
  * Conformance: DOM L1, ECMAScript
+ * @returns False if empty, otherwise true
  */
 function checkMsgBody() {
   var body = document.getElementById("body");
@@ -62,8 +65,8 @@ function checkMsgBody() {
   return true;
 }
 
-/* Function   : genProblemsReport
- * Description: Provide user with easy way to report problems with the page.
+/**
+ * Provide user with easy way to report problems with the page.
  * Conformance: DOM L1, DOM L0!, ECMA Script
  */
 function genProblemsReport() {
@@ -75,3 +78,4 @@ function genProblemsReport() {
   var linkSend = document.getElementById("ProblemsReport");
   linkSend.setAttribute("href", strHref);
 }
+
