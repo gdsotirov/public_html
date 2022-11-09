@@ -34,7 +34,8 @@ var map = AmCharts.makeChart("mapdiv",
       {"id": "PT","showAsSelected": true},
       {"id": "RO","showAsSelected": true},
       {"id": "RS","showAsSelected": true},
-      {"id": "TR","showAsSelected": true}
+      {"id": "TR","showAsSelected": true},
+      {"id": "US","showAsSelected": true}
     ]
   },
   areasSettings : {
