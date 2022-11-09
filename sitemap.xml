@@ -4,7 +4,7 @@
         xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://sotirov-bg.net/~gsotirov/</loc>
-  <lastmod>2022-08-10</lastmod>
+  <lastmod>2022-11-09</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.0</priority>
  </url>
@@ -34,7 +34,7 @@
  </url>
  <url>
   <loc>https://sotirov-bg.net/~gsotirov/personal</loc>
-  <lastmod>2022-08-10</lastmod>
+  <lastmod>2022-11-09</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.5</priority>
  </url>
