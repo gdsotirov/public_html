@@ -110,12 +110,12 @@
     display: table-column-group;
   }
 
-  div#mapdiv {
+  div#map_countries, div#map_states {
     height: 360px;
     width: 640px;
   }
 
-  div#mapref {
+  div.mapref {
     background-color: #000066;
     color: #B4B4B7;
     font-size: 70%;
@@ -125,7 +125,7 @@
     width: 640px;
   }
 
-  div#mapref a {
+  div.mapref a {
     color: #B4B4B7;
   }
 
