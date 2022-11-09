@@ -27,9 +27,11 @@
 <link rel="alternate" type="text/html" href="personal.bg.html" hreflang="bg" lang="bg" title="Лично" />
 <!-- Scripts -->
 <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/usaHigh.js"></script>
 <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"></script>
 <script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
 <script src="js/map.js"></script>
+<script src="js/map_states.js"></script>
 </head>
 
 <body>
@@ -109,15 +111,25 @@ GCS d-@ s: a- C++++$ UL+++>$ P++>$ L+++>$ !E- W+++>$ N+ o+ K-? w++$ !O !M
 
 <section id="Countries">
 <h2>Countries, I have visited</h2>
-<p class="text">Well, they are not much (just 17 out of <a
-href="https://www.un.org/en/about-us/growth-in-un-membership#2000-Present">the current
-193</a> <a href="https://www.un.org/en/"><abbr
+<p class="text">Well, they are not much - just 17 out of <a
+href="https://www.un.org/en/about-us/growth-in-un-membership#2000-Present">the
+current 193</a> <a href="https://www.un.org/en/"><abbr
 title="United Nations">UN</abbr></a> <a
-href="https://www.un.org/en/member-states">member states</a> or 8.81%), but
+href="https://www.un.org/en/member-states">member states</a> or 8.81%, but
 I like the graphic. I hope to travel more in future :-)</p>
-<div id="mapdiv"></div>
-<div id="mapref"><a href="https://www.amcharts.com/visited_countries/">Create
+<div id="map_countries"></div>
+<div class="mapref"><a href="https://www.amcharts.com/visited_countries/">Create
 your own visited countries map</a> or check out the <a
+href="https://www.amcharts.com/">JavaScript Charts</a>.</div>
+</section>
+
+<section id="US_States">
+<h2>States, I have visited</h2>
+<p class="text">Only 3 of all the 50 in <abbr
+title="United States of America">USA</abbr> or 6%.</p>
+<div id="map_states"></div>
+<div class="mapref"><a href="https://www.amcharts.com/visited_states/">Create
+your own visited states map</a> or check out the <a
 href="https://www.amcharts.com/">JavaScript Charts</a>.</div>
 </section>
 

@@ -27,9 +27,11 @@
 <link rel="alternate" type="text/html" href="personal.en.html" hreflang="en" lang="en" title="Personal" />
 <!-- Scripts -->
 <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/usaHigh.js"></script>
 <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"></script>
 <script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
 <script src="js/map.js"></script>
+<script src="js/map_states.js"></script>
 </head>
 
 <body>
@@ -109,15 +111,25 @@ GCS d-@ s: a- C++++$ UL+++>$ P++>$ L+++>$ !E- W+++>$ N+ o+ K-? w++$ !O !M
 
 <section id="Countries">
 <h2>Държави, които съм посетил</h2>
-<p class="text">Е, не са много (само 17 от <a hreflang="en"
+<p class="text">Е, не са много - само 17 от <a hreflang="en"
 href="https://www.un.org/en/about-us/growth-in-un-membership#2000-Present">настоящите
 193</a> <a hreflang="en" href="https://www.un.org/en/about-us/member-states">страни
 членки</a> на <a hreflang="en" href="https://www.un.org/"><abbr
-title="Организация на обединените нации">ООН</abbr></a> или 8,81%), но
+title="Организация на обединените нации">ООН</abbr></a> или 8,81%, но
 графиката ми харесва. Надявам се в бъдеще да пътувам повече :-)</p>
-<div id="mapdiv"></div>
-<div id="mapref"><a href="https://www.amcharts.com/visited_countries/">Създайте
+<div id="map_countries"></div>
+<div class="mapref"><a href="https://www.amcharts.com/visited_countries/">Създайте
 своя карта на посетените страни</a> или разгледайте <a
+href="https://www.amcharts.com/">JavaScript графиките ни</a>.</div>
+</section>
+
+<section id="US_States">
+<h2>Щати, които съм посетил</h2>
+<p class="text">Само 3 от всичките 50 в <abbr
+title="Съединени Американски Щати">САЩ</abbr> или 6%.</p>
+<div id="map_states"></div>
+<div class="mapref"><a href="https://www.amcharts.com/visited_states/">Създайте
+своя карта на посетените щати</a> или разгледайте <a
 href="https://www.amcharts.com/">JavaScript графиките ни</a>.</div>
 </section>
 
