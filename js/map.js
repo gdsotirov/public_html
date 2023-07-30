@@ -38,6 +38,7 @@ var map_countries = AmCharts.makeChart("map_countries",
       {"id": "RO","showAsSelected": true},
       {"id": "RS","showAsSelected": true},
       {"id": "SE","showAsSelected": true},
+      {"id": "SK","showAsSelected": true},
       {"id": "TR","showAsSelected": true},
       {"id": "US","showAsSelected": true}
     ]
