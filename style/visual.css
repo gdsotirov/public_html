@@ -265,6 +265,19 @@
     list-style-type: disc;
   }
 
+  ul#list_countries li, ul#list_states li {
+    display: inline;
+  }
+
+  ul#list_countries li:after, ul#list_states li:after {
+    content: ", ";
+  }
+
+  ul#list_countries li:last-child:after,
+  ul#list_states li:last-child:after{
+    content: "";
+}
+
   .align-left {
     text-align: left;
   }
