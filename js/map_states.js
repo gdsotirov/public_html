@@ -21,7 +21,9 @@ var map_states = AmCharts.makeChart("map_states",{
       {"id": "US-CA","showAsSelected": true},
       {"id": "US-CO","showAsSelected": true},
       {"id": "US-FL","showAsSelected": true},
+      {"id": "US-IL","showAsSelected": true},
       {"id": "US-NV","showAsSelected": true},
+      {"id": "US-UT","showAsSelected": true},
       {"id": "US-WY","showAsSelected": true}
     ]
   },
