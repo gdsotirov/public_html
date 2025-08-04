@@ -21,6 +21,7 @@ var map_countries = AmCharts.makeChart("map_countries",
     areas : [
       {"id": "AT","showAsSelected": true},
       {"id": "AZ","showAsSelected": true},
+      {"id": "BA","showAsSelected": true},
       {"id": "BE","showAsSelected": true},
       {"id": "BG","showAsSelected": true},
       {"id": "BH","showAsSelected": true},
