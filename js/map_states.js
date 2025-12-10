@@ -4,7 +4,7 @@
  * @license GPL-2.0-only
  */
 
-var map_states = AmCharts.makeChart("map_states",{
+const map_states = AmCharts.makeChart("map_states",{
   type: "map",
   theme: "dark",
   panEventsEnabled : true,

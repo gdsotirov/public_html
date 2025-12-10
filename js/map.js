@@ -4,7 +4,7 @@
  * @license GPL-2.0-only
  */
 
-var map_countries = AmCharts.makeChart("map_countries",
+const map_countries = AmCharts.makeChart("map_countries",
 {
   type: "map",
   theme: "dark",
