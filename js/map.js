@@ -19,6 +19,7 @@ const map_countries = AmCharts.makeChart("map_countries",
     map : "worldHigh",
     getAreasFromMap : true,
     areas : [
+      {"id": "AE","showAsSelected": true},
       {"id": "AL","showAsSelected": true},
       {"id": "AT","showAsSelected": true},
       {"id": "AU","showAsSelected": true},
