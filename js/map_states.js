@@ -23,6 +23,7 @@ const map_states = AmCharts.makeChart("map_states",{
       {"id": "US-FL","showAsSelected": true},
       {"id": "US-IL","showAsSelected": true},
       {"id": "US-NV","showAsSelected": true},
+      {"id": "US-OR","showAsSelected": true},
       {"id": "US-TX","showAsSelected": true},
       {"id": "US-UT","showAsSelected": true},
       {"id": "US-WY","showAsSelected": true}
